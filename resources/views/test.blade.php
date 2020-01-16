@@ -164,9 +164,8 @@ function init() {
       new go.Binding("points").makeTwoWay(),
       $(go.Shape,  // the link path shape
         { isPanelMain: true, strokeWidth: 2 }),
-      $(go.Shape,  // the arrowhead
-        { toArrow: "Standard", stroke: null },
-        new go.Binding('fill', 'color')),
+      $(go.Shape,  // the chosen arrowhead
+        new go.Binding("toArrow", "toArrow")), 
       $(go.TextBlock,{ font: "bold 14pt Helvetica" }, // this is a Link label
         new go.Binding('text', 'text'))   
             
@@ -188,9 +187,9 @@ function init() {
           { text: "New", figure: "RoundedRectangle", fill: "lightyellow" }
         ], [
             // the Palette also has a disconnected Link, which the user can drag-and-drop
-            { points: new go.List(go.Point).addAll([new go.Point(0, 0), new go.Point(30, 0), new go.Point(30, 40), new go.Point(60, 40)]) },
-            { color: 'transparent', points: new go.List(go.Point).addAll([new go.Point(0, 0), new go.Point(30, 0), new go.Point(30, 40), new go.Point(60, 40)]) },
-            { text:"X", points: new go.List(go.Point).addAll([new go.Point(0, 0), new go.Point(30, 0), new go.Point(30, 40), new go.Point(60, 40)]) }              
+            { toArrow:'Standard',points: new go.List(go.Point).addAll([new go.Point(0, 0), new go.Point(30, 0), new go.Point(30, 40), new go.Point(60, 40)]) },
+            { toArrow:'Circle',points: new go.List(go.Point).addAll([new go.Point(0, 0), new go.Point(30, 0), new go.Point(30, 40), new go.Point(60, 40)]) },
+            { toArrow:'Standard',text:"X", points: new go.List(go.Point).addAll([new go.Point(0, 0), new go.Point(30, 0), new go.Point(30, 40), new go.Point(60, 40)]) }              
           ])
       });
       
