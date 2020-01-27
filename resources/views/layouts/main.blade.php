@@ -12,14 +12,14 @@
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('first_page/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Slick slider -->
-    <link href="{{ URL::asset('css/slick.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('first_page/css/slick.css') }}" rel="stylesheet">
     <!-- Theme color -->
-    <link id="switcher" href="{{ URL::asset('css/theme-color/default-theme.css') }}" rel="stylesheet">
+    <link id="switcher" href="{{ URL::asset('first_page/css/theme-color/default-theme.css') }}" rel="stylesheet">
 
     <!-- Main Style -->
-    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('first_page/css/style.css') }}" rel="stylesheet">
 
     <!-- Fonts -->
 
@@ -38,10 +38,11 @@
     <![endif]-->
 </head>
 
-  <body> 	   
+  <body style="background-color:DarkOrange;"> 	   
+
   	
 	<!-- Start Header -->
-	<header id="mu-header" class="" role="banner">
+	<header id="mu-header" class="" role="banner" >
 		<div class="container">
 			<nav class="navbar navbar-default mu-navbar">
 			  	<div class="container-fluid">
@@ -81,24 +82,46 @@
 	</header>
 	<!-- End Header -->
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+  <div class="main">
+  	@yield('content')
+  </div>	
+		
+	<!-- Start footer -->
+	<footer id="mu-footer" role="contentinfo">
+		<div class="container">
+			<div class="mu-footer-area">
+				<div class="mu-social-media">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+				</div>
+				<p class="mu-copyright">&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
+			</div>
+		</div>
+
+	</footer>
+	<!-- End footer -->
+	
+	
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Bootstrap -->
-    <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('first_page/js/bootstrap.min.js') }}"></script>
 	<!-- Slick slider -->
-    <script type="text/javascript" src="{{ URL::asset('js/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('first_page/js/slick.min.js') }}"></script>
     <!-- Counter js -->
-    <script type="text/javascript" src="{{ URL::asset('js/counter.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('first_page/js/counter.js') }}"></script>
     <!-- Ajax contact form  -->
-    <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('first_page/js/app.js') }}"></script>
    
  
 	
     <!-- Custom js -->
-	<script type="text/javascript" src="{{ URL::asset('js/custom.js') }}"></script>
-
-    </body>
-</html>
-
+	<script type="text/javascript" src="{{ URL::asset('first_page/js/custom.js') }}"></script>
 	
+    
+  </body>
+</html>

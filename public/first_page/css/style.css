@@ -991,7 +991,9 @@ button:focus {
 /*--------------------*/
 
 
-#mu-footer{
+#mu-footer{	
+    
+	background-color: #f2dede;
 	display: inline;
 	float: left;
 	width: 100%;
