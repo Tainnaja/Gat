@@ -15,8 +15,16 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected $table = 'users';
     protected $fillable = [
-        'name', 'email', 'password',
+        'first_name',
+        'last_name',
+        'user_name',
+        'email',       
+        'image',
+        'password',
+        'role_id',
+        'published_at'
     ];
 
     /**
@@ -36,4 +44,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function historys(){
+        return $this->hasMany('App\History');
+    }
+
+    public function roles(){
+        return $this->hasOne('App\Role');
+    }   
+    
+    public function skills(){
+        return $this->hasOne('App\Skill');
+    }
+
 }
