@@ -27,6 +27,9 @@ class CreateExamsTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('historys');
+        Schema::dropIfExists('answers');
+        Schema::dropIfExists('articles');
         Schema::dropIfExists('exams');
     }
 }

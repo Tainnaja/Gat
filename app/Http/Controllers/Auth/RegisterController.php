@@ -49,9 +49,12 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name' => ['required', 'string', 'max:255'],
+            'user_name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'image' => 'required'
         ]);
     }
 
@@ -63,9 +66,31 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        // dd($data['image']->getClientOriginalName());
+        
+        if(isset($data['image'])){
+            $image_filename = $data['image']->getClientOriginalName();
+            $image_name = date('Ymd-His-').$image_filename;
+            $public_path = 'user_images/';
+            $destination = base_path() . "/public/" . $public_path;            
+            $data['image']->move($destination, $image_name);
+            $image_path = $public_path . $image_name;
+            }
+            // dd($image_path);
+
+        // $request = app('request');
+        // if($request->hasfile('image')){
+        // $image = $request->file('image');
+        // $filename = time() . '.' . $image->getClientOriginalExtension();
+        // User::make($image)->resize(300, 300)->save( public_path('/user_images/' . $filename) );
+    
+
         return User::create([
-            'name' => $data['name'],
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'user_name' => $data['user_name'],
             'email' => $data['email'],
+            'image' => $image_path,
             'password' => Hash::make($data['password']),
         ]);
     }

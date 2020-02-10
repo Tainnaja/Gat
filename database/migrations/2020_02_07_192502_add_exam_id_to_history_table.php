@@ -17,7 +17,8 @@ class AddExamIdToHistoryTable extends Migration
             $table->bigInteger('exam_id')->unsigned(); 
             $table->foreign('exam_id')
             ->references('id')
-            ->on('exams'); 
+            ->on('exams')
+            ->onDelete('cascade'); 
         });
     }
 
