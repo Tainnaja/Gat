@@ -14,7 +14,7 @@
                  <h1> Welcome Admin : {{ Auth::user()->first_name }} </h1>
             </div>
             <div class="row">
-                <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">สร้างแบบทดสอบใหม่ </button>                                    
+                <button class=" btn-learn"  onclick="location.href='{{ url('/createTest') }}'">สร้างแบบทดสอบใหม่ </button>                                    
             </div>
             <div class="row">
                 <button class="btn-learn"  onclick="location.href='{{ url('#') }}'">แก้ไขแบบทดสอบ</button>              

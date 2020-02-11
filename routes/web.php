@@ -34,3 +34,4 @@ Route::get('/test','TestController@index');
 
 //admin
 Route::get('/admin','GatController@admin');
+Route::get('/createTest','GatController@createTest');

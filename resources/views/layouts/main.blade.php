@@ -32,6 +32,12 @@
   	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
  
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+
+	<!-- <script src="{{ asset('ckeditor/ckeditor.js') }}"></script> -->
+	
+	<!-- <script src="//cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script> -->
+
 </head>
 
   <body style="background-color:#FAEBD7;"> 	   
@@ -146,11 +152,14 @@
     <script type="text/javascript" src="{{ URL::asset('first_page/js/counter.js') }}"></script>
     <!-- Ajax contact form  -->
     <script type="text/javascript" src="{{ URL::asset('first_page/js/app.js') }}"></script>
-   
- 
+	
+	
 	
     <!-- Custom js -->
 	<script type="text/javascript" src="{{ URL::asset('first_page/js/custom.js') }}"></script>
+	
+
+	<!-- <script src="https://cdn.ckeditor.com/ckeditor5/[version.number]/[distribution]/ckeditor.js"></script> -->
 	
     
   </body>
