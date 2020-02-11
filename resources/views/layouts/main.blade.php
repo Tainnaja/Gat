@@ -72,9 +72,27 @@
 									<li><a href="">ACHIEVEMENT</a></li>
 									<li><a href="">YOUR SKILL</a></li>
 									<li><a href="">QUESTIONNARIE</a></li>
-									<li><a href="">ACCOUNT SETTING</a></li>				            
-									<li><a href="">LOG IN</a></li>
-									<li><a href="">SIGN IN</a></li>
+									<li><a href="">ACCOUNT SETTING</a></li>	
+									@guest			            
+										<li><a  href="{{ url('/login') }}">LOG IN</a></li>
+										<li><a href="">SIGN IN</a></li>
+									@else
+										@if(Auth::user()->role_id===2)
+											<li class="nav-item">												
+												<a class="nav-link " href="{{ url('#') }}"> จัดการข้อสอบ</a>
+											</li>
+										@endif
+										<li>
+											{{ Auth::user()->name }} 
+											<a  class="shopping-cart" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">    logout   </a>
+										</li>	
+
+										 <form  class="shopping-cart"id="logout-form" action="{{ route('logout') }}" method="POST"
+											style="display: none;">
+											{{ csrf_field() }}
+										</form>		
+									@endguest							
 								</ul>
 							</div><!-- /.navbar-collapse -->
 						</div><!-- /.container-fluid -->
