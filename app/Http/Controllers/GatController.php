@@ -9,8 +9,26 @@ class GatController extends Controller
     public function index() {  
         return view('Gat.index');
     }
-
     public function learn() {  
         return view('Gat.learn');
     }
+    public function skillsGat() {  
+        return view('Gat.skillsGat');
+    }
+    public function theory() {  
+        return view('Gat.theory');
+    }
+    public function technique() {  
+        return view('Gat.technique');
+    }
+    public function relationship() {  
+        return view('Gat.relationship');
+    }
+    public function minitest() {  
+        return view('Gat.minitest');
+    }
+    public function fulltest() {  
+        return view('Gat.fulltest');
+    }
+    
 }

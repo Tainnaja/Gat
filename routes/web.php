@@ -22,7 +22,12 @@ Auth::routes();
 
 Route::get('/', 'GatController@index');
 Route::get('/learn', 'GatController@learn');
-
+Route::get('/skillsGat', 'GatController@skillsGat');
+Route::get('/theory', 'GatController@theory');
+Route::get('/technique', 'GatController@technique');
+Route::get('/relationship', 'GatController@relationship');
+Route::get('/minitest', 'GatController@minitest');
+Route::get('/fulltest', 'GatController@fulltest');
 
 
 // Route::get('/test','TestController@index');
