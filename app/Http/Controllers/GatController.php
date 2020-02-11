@@ -34,5 +34,9 @@ class GatController extends Controller
     public function fulltest() {  
         return view('Gat.fulltest');
     }
+
+    public function admin() {  
+        return view('Gat.admin');
+    }
     
 }

@@ -79,11 +79,13 @@
 									@else
 										@if(Auth::user()->role_id===2)
 											<li class="nav-item">												
-												<a class="nav-link " href="{{ url('#') }}"> จัดการข้อสอบ</a>
+												<a class="nav-link " href="{{ url('/admin') }}"> จัดการข้อสอบ</a>
 											</li>
 										@endif
+										<!-- <li>
+											{{ Auth::user()->first_name }} 
+										</li>	 -->
 										<li>
-											{{ Auth::user()->name }} 
 											<a  class="shopping-cart" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">    logout   </a>
 										</li>	

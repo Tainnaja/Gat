@@ -9,23 +9,26 @@
         <div class="row">
         <div class="col-xs-6 col-md-3"></div>
         <div class="col-xs-6 col-md-8">
-            <div class="row">
-                <button class=" btn-learn"  onclick="location.href='{{ url('/skillsGat') }}'">1. อะไรคือทักษะเชิงวิเคราะห์และ Gat เชื่อมโยง </button>                                    
+            <div class="row" style="margin-top:-50px;margin-bottom:50px;margin-left:75px;">
+                 <h1>แบบทดสอบกับข้อสอบจริง </h1>
             </div>
             <div class="row">
-                <button class="btn-learn"  onclick="location.href='{{ url('/theory') }}'">2. ทฤษฎีที่ต้องรู้</button>              
+                <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">รอ admin เพิ่ม  </button>                                    
             </div>
             <div class="row">
-                <button class=" btn-learn"  onclick="location.href='{{ url('/technique') }}'">3. เทคนิคการทำ</button>              
+                 <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">รอ admin เพิ่ม  </button>    
             </div>
             <div class="row">
-                <button class=" btn-learn"  onclick="location.href='{{ url('/relationship') }}'">4. แบบทดสอบความเข้าใจความสัมพันธ์</button>              
+                  <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">รอ admin เพิ่ม  </button>             
             </div>
             <div class="row">
-                <button class=" btn-learn"  onclick="location.href='{{ url('/minitest') }}'">5. แบบทดสอบบทความขนาดเล็ก</button>              
+                  <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">รอ admin เพิ่ม  </button>    
             </div>
             <div class="row">
-                <button class=" btn-learn"  onclick="location.href='{{ url('/fulltest') }}'">6. แบบทดสอบกับข้อสอบจริง</button>              
+                 <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">รอ admin เพิ่ม  </button>             
+            </div>
+            <div class="row">
+                   <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">รอ admin เพิ่ม  </button>    
             </div>
         </div>
         <div class="col-xs-6 col-md-1"></div> 
