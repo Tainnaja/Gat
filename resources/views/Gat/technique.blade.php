@@ -7,6 +7,7 @@
         <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px">           
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'reading')">เทคนิคการอ่านจับใจความ</button>
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'writing')">เทคนิคการเขียนแผนภาพ</button>             
+            <button class="w3-bar-item w3-button tablink" onclick="location.href='{{ url('/learn') }}'"> <span class="glyphicon  glyphicon glyphicon-arrow-left " aria-hidden="true"></span>   ย้อนกลับ</button>
         </div>        
         <div id="reading" class="w3-container city w3-animate-zoom" style="display:none; margin-left:125px; margin-bottom: 500px;display:block">
             <h1>เทคนิคการอ่านจับใจความ</h1>           

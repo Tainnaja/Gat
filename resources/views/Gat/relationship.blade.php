@@ -8,6 +8,7 @@
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'relate')">ความสัมพันธ์</button>
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'sequence')">ลำดับเหตุการณ์</button>             
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'sentence')">ประโยคความซ้อน</button>             
+            <button class="w3-bar-item w3-button tablink" onclick="location.href='{{ url('/learn') }}'"> <span class="glyphicon  glyphicon glyphicon-arrow-left " aria-hidden="true"></span>   ย้อนกลับ</button>
         </div>        
         <div id="relate" class="w3-container city w3-animate-zoom" style="display:none; margin-left:125px; margin-bottom: 500px;display:block">
             <h1>ความสัมพันธ์</h1>           

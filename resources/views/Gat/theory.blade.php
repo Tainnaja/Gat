@@ -9,6 +9,7 @@
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Chronology')">ข้อควรระวังลำดับเหตุการณ์</button>
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'sentences')">ข้อควรระวังประโยคความซ้อน</button>
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'duplicate')">ข้อควรระวังการกล่าวซ้ำ</button> 
+            <button class="w3-bar-item w3-button tablink" onclick="location.href='{{ url('/learn') }}'"> <span class="glyphicon  glyphicon glyphicon-arrow-left " aria-hidden="true"></span>   ย้อนกลับ</button>
         </div>
          <div id="relationship" class="w3-container city w3-animate-zoom" style="display:none; margin-left:125px; margin-bottom: 500px;display:block">
             <h1>ความสัมพันธ์แต่ละแบบ</h1>

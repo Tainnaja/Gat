@@ -8,7 +8,8 @@
             <!-- <h5 class="w3-bar-item">Menu</h5> -->
             <button id="BtnSkills" class="w3-bar-item w3-button tablink" onclick="openLink(event, 'skills')">ทักษะเชิงวิเคราะห์คืออะไร</button>
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'gatTest')">ข้อสอบ gat คืออะไร</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'examples')">ตัวอย่างข้อสอบและวิธีคิดคะแนน</button>            
+            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'examples')">ตัวอย่างข้อสอบและวิธีคิดคะแนน</button>    
+            <button class="w3-bar-item w3-button tablink" onclick="location.href='{{ url('/learn') }}'"> <span class="glyphicon  glyphicon glyphicon-arrow-left " aria-hidden="true"></span>   ย้อนกลับ</button>       
         </div>
         <!-- <div style="margin-left:130px"> -->
         <!-- <div class="w3-padding">Use any of the w3-animate-classes to fade, zoom or slide in tab content.</div> -->
