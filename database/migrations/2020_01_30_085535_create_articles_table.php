@@ -15,8 +15,11 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
-            $table->string('article_name');
-            $table->string('article_detail');
+            $table->string('exam_name');
+            $table->string('article_name1');
+            $table->string('article_detail1');
+            $table->string('article_name2');
+            $table->string('article_detail2');
             $table->timestamps();
         });
     }

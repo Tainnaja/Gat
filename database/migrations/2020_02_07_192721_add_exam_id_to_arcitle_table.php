@@ -13,13 +13,13 @@ class AddExamIdToArcitleTable extends Migration
      */
     public function up()
     {
-        Schema::table('articles', function (Blueprint $table) {
-            $table->bigInteger('exam_id')->unsigned(); 
-            $table->foreign('exam_id')
-            ->references('id')
-            ->on('exams')
-            ->onDelete('cascade');
-        });
+        // Schema::table('articles', function (Blueprint $table) {
+        //     $table->bigInteger('exam_id')->unsigned(); 
+        //     $table->foreign('exam_id')
+        //     ->references('id')
+        //     ->on('exams')
+        //     ->onDelete('cascade');
+        // });
     }
 
     /**
@@ -29,8 +29,8 @@ class AddExamIdToArcitleTable extends Migration
      */
     public function down()
     {
-        Schema::table('articles', function (Blueprint $table) {
-            //
-        });
+        // Schema::table('articles', function (Blueprint $table) {
+        //     //
+        // });
     }
 }

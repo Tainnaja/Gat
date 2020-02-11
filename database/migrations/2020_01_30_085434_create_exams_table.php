@@ -13,11 +13,11 @@ class CreateExamsTable extends Migration
      */
     public function up()
     {
-        Schema::create('exams', function (Blueprint $table) {
-            $table->bigIncrements('id')->unsigned();
-            $table->string('exam_name');
-            $table->timestamps();
-        });
+        // Schema::create('exams', function (Blueprint $table) {
+        //     $table->bigIncrements('id')->unsigned();
+        //     $table->string('exam_name');
+        //     $table->timestamps();
+        // });
     }
 
     /**
@@ -27,9 +27,9 @@ class CreateExamsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('historys');
-        Schema::dropIfExists('answers');
-        Schema::dropIfExists('articles');
-        Schema::dropIfExists('exams');
+        // Schema::dropIfExists('historys');
+        // Schema::dropIfExists('answers');
+        // Schema::dropIfExists('articles');
+        // Schema::dropIfExists('exams');
     }
 }

@@ -20,7 +20,7 @@
                 <button class="btn-learn"  onclick="location.href='{{ url('#') }}'">แก้ไขแบบทดสอบ</button>              
             </div>
             <div class="row">
-                <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">ลองทำแบบทดสอบ</button>              
+                <button class=" btn-learn"  onclick="location.href='{{ url('/fulltest') }}'">ลองทำแบบทดสอบ</button>              
             </div>
          
         </div>

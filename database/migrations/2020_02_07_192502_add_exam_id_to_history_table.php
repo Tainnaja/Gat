@@ -13,13 +13,13 @@ class AddExamIdToHistoryTable extends Migration
      */
     public function up()
     {
-        Schema::table('historys', function (Blueprint $table) {
-            $table->bigInteger('exam_id')->unsigned(); 
-            $table->foreign('exam_id')
-            ->references('id')
-            ->on('exams')
-            ->onDelete('cascade'); 
-        });
+        // Schema::table('historys', function (Blueprint $table) {
+        //     $table->bigInteger('exam_id')->unsigned(); 
+        //     $table->foreign('exam_id')
+        //     ->references('id')
+        //     ->on('exams')
+        //     ->onDelete('cascade'); 
+        // });
     }
 
     /**
@@ -29,8 +29,8 @@ class AddExamIdToHistoryTable extends Migration
      */
     public function down()
     {
-        Schema::table('historys', function (Blueprint $table) {
-            //
-        });
+        // Schema::table('historys', function (Blueprint $table) {
+        //     //
+        // });
     }
 }
