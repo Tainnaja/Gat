@@ -30,4 +30,4 @@ Route::get('/minitest', 'GatController@minitest');
 Route::get('/fulltest', 'GatController@fulltest');
 
 
-// Route::get('/test','TestController@index');
+Route::get('/test','TestController@index');
