@@ -34,6 +34,12 @@
   	<!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
  
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+
+	<!-- <script src="{{ asset('ckeditor/ckeditor.js') }}"></script> -->
+	
+	<!-- <script src="//cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script> -->
+
 </head>
 
   <body style="background-color:#FAEBD7;"> 	   
@@ -76,10 +82,38 @@
 								@else
 									<li><a href="">HOME</a></li>					         
 									<li><a href="">ACHIEVEMENT</a></li>
+<<<<<<< HEAD
 									<li><a href="">YOUR SKILL</a></li>									
 									<li><a href="">ACCOUNT SETTING</a></li>
 									<li><a href="">{{ Auth::user()->user_name }}</a></li>	
 								@endguest	
+=======
+									<li><a href="">YOUR SKILL</a></li>
+									<li><a href="">QUESTIONNARIE</a></li>
+									<li><a href="">ACCOUNT SETTING</a></li>	
+									@guest			            
+										<li><a  href="{{ url('/login') }}">LOG IN</a></li>
+										<li><a href="">SIGN IN</a></li>
+									@else
+										@if(Auth::user()->role_id===2)
+											<li class="nav-item">												
+												<a class="nav-link " href="{{ url('/admin') }}"> จัดการข้อสอบ</a>
+											</li>
+										@endif
+										<!-- <li>
+											{{ Auth::user()->first_name }} 
+										</li>	 -->
+										<li>
+											<a  class="shopping-cart" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">    logout   </a>
+										</li>	
+
+										 <form  class="shopping-cart"id="logout-form" action="{{ route('logout') }}" method="POST"
+											style="display: none;">
+											{{ csrf_field() }}
+										</form>		
+									@endguest							
+>>>>>>> a5c047e912bfc67cba9d8be1c0d05052302ace5f
 								</ul>
 							</div><!-- /.navbar-collapse -->
 						</div><!-- /.container-fluid -->
@@ -131,11 +165,14 @@
     <script type="text/javascript" src="{{ URL::asset('first_page/js/counter.js') }}"></script>
     <!-- Ajax contact form  -->
     <script type="text/javascript" src="{{ URL::asset('first_page/js/app.js') }}"></script>
-   
- 
+	
+	
 	
     <!-- Custom js -->
 	<script type="text/javascript" src="{{ URL::asset('first_page/js/custom.js') }}"></script>
+	
+
+	<!-- <script src="https://cdn.ckeditor.com/ckeditor5/[version.number]/[distribution]/ckeditor.js"></script> -->
 	
     
   </body>

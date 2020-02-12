@@ -6,6 +6,14 @@ use Illuminate\Http\Request;
 
 class GatController extends Controller
 {
+
+    public function __construct(){
+        $this->middleware('auth', ['only' =>
+        ['fulltest']]);
+     }
+
+
+
     public function index() {  
         return view('Gat.index');
     }
@@ -29,6 +37,16 @@ class GatController extends Controller
     }
     public function fulltest() {  
         return view('Gat.fulltest');
+    }
+
+
+    // admin
+    public function admin() {  
+        return view('Gat.admin');
+    }
+
+    public function createTest() {  
+        return view('Gat.createTest');
     }
     
 }
