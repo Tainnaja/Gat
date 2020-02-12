@@ -24,12 +24,14 @@
     <!-- Main Style -->
     <link href="{{ URL::asset('first_page/css/style.css') }}" rel="stylesheet">
 
-    <!-- Fonts -->
+	<!-- Fonts -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet"> -->
+	
 
     <!-- Open Sans for body font -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet"> -->
     <!-- Lato for Title -->
-  	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+  	<!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
  
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -67,14 +69,17 @@
 
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="nav navbar-nav mu-menu navbar-right">
-									<!-- <li><a href="">HOME</a></li>					         -->
+								<ul class="nav navbar-nav mu-menu navbar-right">									
+								@guest				            
+									<li><a href="{{ route('login') }}">LOG IN</a></li>
+									<li><a href="{{ route('register') }}">SIGN IN</a></li>
+								@else
+									<li><a href="">HOME</a></li>					         
 									<li><a href="">ACHIEVEMENT</a></li>
-									<li><a href="">YOUR SKILL</a></li>
-									<li><a href="">QUESTIONNARIE</a></li>
-									<li><a href="">ACCOUNT SETTING</a></li>				            
-									<li><a href="">LOG IN</a></li>
-									<li><a href="">SIGN IN</a></li>
+									<li><a href="">YOUR SKILL</a></li>									
+									<li><a href="">ACCOUNT SETTING</a></li>
+									<li><a href="">{{ Auth::user()->user_name }}</a></li>	
+								@endguest	
 								</ul>
 							</div><!-- /.navbar-collapse -->
 						</div><!-- /.container-fluid -->

@@ -4,7 +4,7 @@
 @section('content')
 
 <div style="margin-top:90px ; " >
-        <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px">
+            <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:180px">
             <!-- <h5 class="w3-bar-item">Menu</h5> -->
             <button id="BtnSkills" class="w3-bar-item w3-button tablink" onclick="openLink(event, 'skills')">ทักษะเชิงวิเคราะห์คืออะไร</button>
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'gatTest')">ข้อสอบ gat คืออะไร</button>
@@ -14,10 +14,11 @@
         <!-- <div style="margin-left:130px"> -->
         <!-- <div class="w3-padding">Use any of the w3-animate-classes to fade, zoom or slide in tab content.</div> -->
         <!-- <div id="Fade" class="w3-container city w3-animate-opacity" style="display:none"> -->
-        <div id="skills" class="w3-container city w3-animate-zoom" style="display:none; margin-left:125px; margin-bottom: 500px;display:block">
-            <h1>ทักษะเชิงวิเคราะห์</h1>
-            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทักษะเชิงวิเคราะห์ คือ ความสามารถในการคิดจำแนกแจกแจงองค์ประกอบต่างๆ ของข้อมูลหรือปัญหาต่างๆออกเป็นประเด็นย่อยๆ </h3>
-            <h3>ในหลายๆแง่มุม  รวมทั้งการหาความสัมพันธ์ระหว่างองค์ประกอบเหล่านั้น  แล้วนำมาวิเคราะห์เพื่อหาสาเหตุที่แท้จริงของสิ่งที่เกิดขึ้นได้อย่างเป็นระบบ</h3>         
+        <div id="skills" class="w3-container city w3-animate-zoom" style="display:none; margin-left:250px; margin-right:150px; margin-bottom:500px;display:block">
+            <h1><br/></h1>
+            <h1>ทักษะเชิงวิเคราะห์</h1><br/>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทักษะเชิงวิเคราะห์ คือ ความสามารถในการคิดจำแนกแจกแจงองค์ประกอบต่างๆ ของข้อมูลหรือปัญหาต่างๆออกเป็นประเด็นย่อยๆ 
+            ในหลายๆแง่มุม  รวมทั้งการหาความสัมพันธ์ระหว่างองค์ประกอบเหล่านั้น  แล้วนำมาวิเคราะห์เพื่อหาสาเหตุที่แท้จริงของสิ่งที่เกิดขึ้นได้อย่างเป็นระบบ</p>         
         </div>
 
         <div id="gatTest" class="w3-container city w3-animate-zoom" style="display:none; margin-left:125px; margin-bottom: 500px">

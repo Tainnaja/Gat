@@ -29,13 +29,16 @@ Version: 1.0
 /* BASIC TYPOGRAPHY */
 /*--------------------*/
 
+
+
 body,
 html {
 	overflow-x:hidden;
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Prompt', sans-serif;
 	font-size: 15px;
 	letter-spacing: 0.5px;
 	line-height: 1.5;
@@ -70,8 +73,9 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
+	/*font-family: 'Lato', sans-serif;*/
+	font-family: 'Prompt', sans-serif;
+	font-weight: 400;
 	margin-top: 0;
 }
 
@@ -137,7 +141,8 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
+	color: #333;
+	
 }
 
 address {
@@ -264,7 +269,8 @@ button:focus {
 .navbar-default .navbar-brand {
 	color: #fff;
 	font-size: 35px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Prompt', sans-serif;
+	/*font-family: 'Lato', sans-serif;*/
 	font-weight: 700;
 	margin-top: -11px;
 }
