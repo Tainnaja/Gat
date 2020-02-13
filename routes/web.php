@@ -33,5 +33,5 @@ Route::get('/fulltest', 'GatController@fulltest');
 Route::get('/test','TestController@index');
 
 //admin
-Route::get('/admin','GatController@admin');
-Route::get('/createTest','GatController@createTest');
+Route::get('/admin','ExamController@admin');
+Route::get('/createTest','ExamController@createTest');

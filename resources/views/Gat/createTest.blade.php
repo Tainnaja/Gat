@@ -5,14 +5,18 @@
 <!-- <script src="{{ asset('ckeditor/ckeditor.js') }}"></script> -->
 <script src="https://cdn.ckeditor.com/4.5.6/standard/ckeditor.js"></script>
 
-        <div class="container" style="margin-top:140px ;">
+        <div class="container" style="margin-top:140px;">
                 <div class="row">
                     <div class="col" style="margin-top:-50px;margin-bottom:50px;margin-left:355px;">
-                        <h1> สร้างแบบทดสอบใหม่</h1>
+                        <h1><b> สร้างแบบทดสอบใหม่</b></h1>
                     </div>
             </div>
-        </div>        
-
+        </div>
+    <div style="margin-right:150px ;margin-left:150px;">        
+        <div class="form-group">
+            {!! Form::label('exam_name', 'ชื่อชุดข้อสอบ : ') !!}
+             {!! Form::text('exam_name', null, ['class'=>'form-control','Placeholder'=>"ชื่อชุดข้อสอบ"]) !!}
+        </div>
         <div class="w3-bar w3-black">
             <button class="w3-bar-item w3-button" onclick="openCity('article1')">บทความที่ 1</button>
             <button class="w3-bar-item w3-button" onclick="openCity('article2')">บทความที่ 2</button>
@@ -22,85 +26,108 @@
         <div id="article1" class="w3-container w3-display-container city" >     
             <h1>ข้อสอบชุดที่ 1</h1>       
             <!-- <h2>article1</h2>     -->
-            {!! Form::open(['url' => '#','method' => 'POST','files' => true]) !!}
-            <div class="form-group">
-            {!! Form::label('exam_name', 'ชื่อชุดข้อสอบ : ') !!}
-             {!! Form::text('exam_name', null, ['class'=>'form-control','Placeholder'=>"ชื่อชุดข้อสอบ"]) !!}
-            </div>
+            {!! Form::open(['url' => '#','method' => 'POST','files' => true]) !!}            
 
             <div class="form-group">
             {!! Form::label(' article_name', 'ชื่อบทความ : ') !!}
              {!! Form::text('article_name', null, ['class'=>'form-control','Placeholder'=>"ชื่อบทความ"]) !!}
             </div>
-            <div class="form-group">
-            <!-- {!! Form::label(' article_detail', 'ชื่อบทความ : ') !!}
-            {!! Form::text('article_detail', null, ['class'=>'ckeditor','Placeholder'=>"ชื่อบทความ"]) !!} -->
+            <div class="form-group">            
                 
                 <textarea id="article_detail" class="ckeditor" ></textarea>                    
                 </textarea>
             </div>
 
             <table class="table table-bordered">
-            <thead  >
-                <tr style="background:black; color:#F8F8FF">
-                    <th scope="col-1">ลำดับ</th>
-                    <th scope="col-4">ข้อความที่กำหนด</th>
-                    <th scope="col-7"></th>  
-                    <th scope="col-7">ร่างรหัสคำตอบ</th>  
-                    <th scope="col-7"></th> 
-                    <th scope="col-7"></th>                                       
-                </tr>
-            </thead>
-            <tbody>
-                <tr  style="background:#F5F5F5">
-                    <th scope="row">1</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>                                  
-                    <td> <input class="" id="set1-1-1" type="text"></td>
-                    <td> <input class="" id="set1-1-2" type="text"></td>
-                    <td> <input class="" id="set1-1-3" type="text"></td>   
-                    <td> <input class="" id="set1-1-3" type="text"></td>                                 
-                </tr>
-                <tr style="background:#DCDCDC">
-                    <th scope="row">2</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>
-                    <td> <input class="" id="set1-2-1" type="text"></td>
-                    <td> <input class="" id="set1-2-2" type="text"></td>
-                    <td> <input class="" id="set1-2-3" type="text"></td>  
-                    <td> <input class="" id="set1-1-3" type="text"></td>           
-                </tr>
-                <tr style="background:#F5F5F5">
-                    <th scope="row">3</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>     
-                    <td> <input class="" id="set1-3-1" type="text"></td>
-                    <td> <input class="" id="set1-3-2" type="text"></td>
-                    <td> <input class="" id="set1-3-3" type="text"></td>   
-                    <td> <input class="" id="set1-1-3" type="text"></td>     
-                </tr>
-                <tr style="background:#DCDCDC">
-                    <th scope="row">4</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>   
-                    <td> <input class="" id="set1-3-1" type="text"></td>
-                    <td> <input class="" id="set1-3-2" type="text"></td>
-                    <td> <input class="" id="set1-3-3" type="text"></td>   
-                    <td> <input class="" id="set1-1-3" type="text"></td>     
-                </tr>
-                <tr style="background:#F5F5F5">
-                    <th scope="row">5</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>   
-                    <td> <input class="" id="set1-3-1" type="text"></td>
-                    <td> <input class="" id="set1-3-2" type="text"></td>
-                    <td> <input class="" id="set1-3-3" type="text"></td>   
-                    <td> <input class="" id="set1-1-3" type="text"></td>     
-                </tr>
-                <tr style="background:#DCDCDC">
-                    <th scope="row">6</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>  
-                    <td> <input class="" id="set1-3-1" type="text"></td>
-                    <td> <input class="" id="set1-3-2" type="text"></td>
-                    <td> <input class="" id="set1-3-3" type="text"></td>   
-                    <td> <input class="" id="set1-1-3" type="text"></td>     
-                </tr>
-            </tbody>
+                <thead>
+                    <tr style="background:black; color:#F8F8FF;">
+                        <th scope="col-1">ลำดับ</th>
+                        <th scope="col-2">ข้อความที่กำหนด</th>
+                        <th colspan="4">ผลเฉลยรหัสคำตอบ</th>                                                             
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background:#F5F5F5">
+                        <th scope="row">1</th>
+                        <td> <input class="" id="text1-1" type="text"></td>                                  
+                        <td> <input class="" id="set1-1-1" type="text"></td>
+                        <td> <input class="" id="set1-1-2" type="text"></td>
+                        <td> <input class="" id="set1-1-3" type="text"></td>   
+                        <td> <input class="" id="set1-1-4" type="text"></td>                                 
+                    </tr>
+                    <tr style="background:#DCDCDC">
+                        <th scope="row">2</th>
+                        <td> <input class="" id="text1-2" type="text"></td>
+                        <td> <input class="" id="set1-2-1" type="text"></td>
+                        <td> <input class="" id="set1-2-2" type="text"></td>
+                        <td> <input class="" id="set1-2-3" type="text"></td>  
+                        <td> <input class="" id="set1-2-4" type="text"></td>           
+                    </tr>
+                    <tr style="background:#F5F5F5">
+                        <th scope="row">3</th>
+                        <td> <input class="" id="text1-3" type="text"></td>     
+                        <td> <input class="" id="set1-3-1" type="text"></td>
+                        <td> <input class="" id="set1-3-2" type="text"></td>
+                        <td> <input class="" id="set1-3-3" type="text"></td>   
+                        <td> <input class="" id="set1-3-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#DCDCDC">
+                        <th scope="row">4</th>
+                        <td> <input class="" id="text1-4" type="text"></td>   
+                        <td> <input class="" id="set1-4-1" type="text"></td>
+                        <td> <input class="" id="set1-4-2" type="text"></td>
+                        <td> <input class="" id="set1-4-3" type="text"></td>   
+                        <td> <input class="" id="set1-4-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#F5F5F5">
+                        <th scope="row">5</th>
+                        <td> <input class="" id="text1-5" type="text"></td>   
+                        <td> <input class="" id="set1-5-1" type="text"></td>
+                        <td> <input class="" id="set1-5-2" type="text"></td>
+                        <td> <input class="" id="set1-5-3" type="text"></td>   
+                        <td> <input class="" id="set1-5-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#DCDCDC">
+                        <th scope="row">6</th>
+                        <td> <input class="" id="text1-6" type="text"></td>  
+                        <td> <input class="" id="set1-6-1" type="text"></td>
+                        <td> <input class="" id="set1-6-2" type="text"></td>
+                        <td> <input class="" id="set1-6-3" type="text"></td>   
+                        <td> <input class="" id="set1-6-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#F5F5F5">
+                        <th scope="row">7</th>
+                        <td> <input class="" id="text1-7" type="text"></td>   
+                        <td> <input class="" id="set1-7-1" type="text"></td>
+                        <td> <input class="" id="set1-7-2" type="text"></td>
+                        <td> <input class="" id="set1-7-3" type="text"></td>   
+                        <td> <input class="" id="set1-7-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#DCDCDC">
+                        <th scope="row">8</th>
+                        <td> <input class="" id="text1-8" type="text"></td>   
+                        <td> <input class="" id="set1-8-1" type="text"></td>
+                        <td> <input class="" id="set1-8-2" type="text"></td>
+                        <td> <input class="" id="set1-8-3" type="text"></td>   
+                        <td> <input class="" id="set1-8-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#F5F5F5">
+                        <th scope="row">9</th>
+                        <td> <input class="" id="text1-9" type="text"></td>   
+                        <td> <input class="" id="set1-9-1" type="text"></td>
+                        <td> <input class="" id="set1-9-2" type="text"></td>
+                        <td> <input class="" id="set1-9-3" type="text"></td>   
+                        <td> <input class="" id="set1-9-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#DCDCDC">
+                        <th scope="row">10</th>
+                        <td> <input class="" id="text1-10" type="text"></td>   
+                        <td> <input class="" id="set1-10-1" type="text"></td>
+                        <td> <input class="" id="set1-10-2" type="text"></td>
+                        <td> <input class="" id="set1-10-3" type="text"></td>   
+                        <td> <input class="" id="set1-10-4" type="text"></td>     
+                    </tr>
+                </tbody>
             </table>
             <div class="form-group">
                 {!! Form::submit("สร้างชุดข้อสอบ", ['class'=>'btn form-control']) !!}
@@ -111,19 +138,13 @@
 
         <div id="article2" class="w3-container w3-display-container city"style="display:none" >
         <h1>ข้อสอบชุดที่ 2</h1>               
-            {!! Form::open(['url' => '#','method' => 'POST','files' => true]) !!}
-                <div class="form-group">
-                {!! Form::label('exam_name', 'ชื่อชุดข้อสอบ : ') !!}
-                {!! Form::text('exam_name', null, ['class'=>'form-control','Placeholder'=>"ชื่อชุดข้อสอบ"]) !!}
-                </div>
+            {!! Form::open(['url' => '#','method' => 'POST','files' => true]) !!}                
 
                 <div class="form-group">
                 {!! Form::label(' article_name', 'ชื่อบทความ : ') !!}
                 {!! Form::text('article_name', null, ['class'=>'form-control','Placeholder'=>"ชื่อบทความ"]) !!}
                 </div>
-                <div class="form-group">
-                <!-- {!! Form::label(' article_detail', 'ชื่อบทความ : ') !!}
-                {!! Form::text('article_detail', null, ['class'=>'ckeditor','Placeholder'=>"ชื่อบทความ"]) !!} -->
+                <div class="form-group">                
                     
                     <textarea id="article_detail" class="ckeditor" ></textarea>                    
                     </textarea>
@@ -133,63 +154,92 @@
             <thead  >
                 <tr style="background:black; color:#F8F8FF">
                     <th scope="col-1">ลำดับ</th>
-                    <th scope="col-4">ข้อความที่กำหนด</th>
-                    <th scope="col-7"></th>  
-                    <th scope="col-7">ร่างรหัสคำตอบ</th>  
-                    <th scope="col-7"></th> 
-                    <th scope="col-7"></th>                                       
+                    <th scope="col-2">ข้อความที่กำหนด</th>
+                    <th colspan="4">ผลเฉลยรหัสคำตอบ</th>                                       
                 </tr>
             </thead>
-            <tbody>
-                <tr  style="background:#F5F5F5">
-                    <th scope="row">1</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>                                  
-                    <td> <input class="" id="set1-1-1" type="text"></td>
-                    <td> <input class="" id="set1-1-2" type="text"></td>
-                    <td> <input class="" id="set1-1-3" type="text"></td>   
-                    <td> <input class="" id="set1-1-3" type="text"></td>                                 
-                </tr>
-                <tr style="background:#DCDCDC">
-                    <th scope="row">2</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>
-                    <td> <input class="" id="set1-2-1" type="text"></td>
-                    <td> <input class="" id="set1-2-2" type="text"></td>
-                    <td> <input class="" id="set1-2-3" type="text"></td>  
-                    <td> <input class="" id="set1-1-3" type="text"></td>           
-                </tr>
-                <tr style="background:#F5F5F5">
-                    <th scope="row">3</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>     
-                    <td> <input class="" id="set1-3-1" type="text"></td>
-                    <td> <input class="" id="set1-3-2" type="text"></td>
-                    <td> <input class="" id="set1-3-3" type="text"></td>   
-                    <td> <input class="" id="set1-1-3" type="text"></td>     
-                </tr>
-                <tr style="background:#DCDCDC">
-                    <th scope="row">4</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>   
-                    <td> <input class="" id="set1-3-1" type="text"></td>
-                    <td> <input class="" id="set1-3-2" type="text"></td>
-                    <td> <input class="" id="set1-3-3" type="text"></td>   
-                    <td> <input class="" id="set1-1-3" type="text"></td>     
-                </tr>
-                <tr style="background:#F5F5F5">
-                    <th scope="row">5</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>   
-                    <td> <input class="" id="set1-3-1" type="text"></td>
-                    <td> <input class="" id="set1-3-2" type="text"></td>
-                    <td> <input class="" id="set1-3-3" type="text"></td>   
-                    <td> <input class="" id="set1-1-3" type="text"></td>     
-                </tr>
-                <tr style="background:#DCDCDC">
-                    <th scope="row">6</th>
-                    <td> <input class="" id="set1-3-1" type="text"></td>  
-                    <td> <input class="" id="set1-3-1" type="text"></td>
-                    <td> <input class="" id="set1-3-2" type="text"></td>
-                    <td> <input class="" id="set1-3-3" type="text"></td>   
-                    <td> <input class="" id="set1-1-3" type="text"></td>     
-                </tr>
-            </tbody>
+                <tbody>
+                    <tr style="background:#F5F5F5">
+                        <th scope="row">11</th>
+                        <td> <input class="" id="text2-1" type="text"></td>                                  
+                        <td> <input class="" id="set2-1-1" type="text"></td>
+                        <td> <input class="" id="set2-1-2" type="text"></td>
+                        <td> <input class="" id="set2-1-3" type="text"></td>   
+                        <td> <input class="" id="set2-1-4" type="text"></td>                                 
+                    </tr>
+                    <tr style="background:#DCDCDC">
+                        <th scope="row">12</th>
+                        <td> <input class="" id="text2-2" type="text"></td>
+                        <td> <input class="" id="set2-2-1" type="text"></td>
+                        <td> <input class="" id="set2-2-2" type="text"></td>
+                        <td> <input class="" id="set2-2-3" type="text"></td>  
+                        <td> <input class="" id="set2-2-4" type="text"></td>           
+                    </tr>
+                    <tr style="background:#F5F5F5">
+                        <th scope="row">13</th>
+                        <td> <input class="" id="text2-3" type="text"></td>     
+                        <td> <input class="" id="set2-3-1" type="text"></td>
+                        <td> <input class="" id="set2-3-2" type="text"></td>
+                        <td> <input class="" id="set2-3-3" type="text"></td>   
+                        <td> <input class="" id="set2-3-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#DCDCDC">
+                        <th scope="row">14</th>
+                        <td> <input class="" id="text2-4" type="text"></td>   
+                        <td> <input class="" id="set2-4-1" type="text"></td>
+                        <td> <input class="" id="set2-4-2" type="text"></td>
+                        <td> <input class="" id="set2-4-3" type="text"></td>   
+                        <td> <input class="" id="set2-4-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#F5F5F5">
+                        <th scope="row">15</th>
+                        <td> <input class="" id="text2-5" type="text"></td>   
+                        <td> <input class="" id="set2-5-1" type="text"></td>
+                        <td> <input class="" id="set2-5-2" type="text"></td>
+                        <td> <input class="" id="set2-5-3" type="text"></td>   
+                        <td> <input class="" id="set2-5-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#DCDCDC">
+                        <th scope="row">16</th>
+                        <td> <input class="" id="text2-6" type="text"></td>  
+                        <td> <input class="" id="set2-6-1" type="text"></td>
+                        <td> <input class="" id="set2-6-2" type="text"></td>
+                        <td> <input class="" id="set2-6-3" type="text"></td>   
+                        <td> <input class="" id="set2-6-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#F5F5F5">
+                        <th scope="row">17</th>
+                        <td> <input class="" id="text1-7" type="text"></td>   
+                        <td> <input class="" id="set2-7-1" type="text"></td>
+                        <td> <input class="" id="set2-7-2" type="text"></td>
+                        <td> <input class="" id="set2-7-3" type="text"></td>   
+                        <td> <input class="" id="set2-7-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#DCDCDC">
+                        <th scope="row">18</th>
+                        <td> <input class="" id="text2-8" type="text"></td>   
+                        <td> <input class="" id="set2-8-1" type="text"></td>
+                        <td> <input class="" id="set2-8-2" type="text"></td>
+                        <td> <input class="" id="set2-8-3" type="text"></td>   
+                        <td> <input class="" id="set2-8-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#F5F5F5">
+                        <th scope="row">19</th>
+                        <td> <input class="" id="text2-9" type="text"></td>   
+                        <td> <input class="" id="set2-9-1" type="text"></td>
+                        <td> <input class="" id="set2-9-2" type="text"></td>
+                        <td> <input class="" id="set2-9-3" type="text"></td>   
+                        <td> <input class="" id="set2-9-4" type="text"></td>     
+                    </tr>
+                    <tr style="background:#DCDCDC">
+                        <th scope="row">20</th>
+                        <td> <input class="" id="text2-10" type="text"></td>   
+                        <td> <input class="" id="set2-10-1" type="text"></td>
+                        <td> <input class="" id="set2-10-2" type="text"></td>
+                        <td> <input class="" id="set2-10-3" type="text"></td>   
+                        <td> <input class="" id="set2-10-4" type="text"></td>     
+                    </tr>
+                </tbody>
             </table>
 
 
@@ -199,6 +249,7 @@
                 </div>
                 {!! Form::close() !!}        
         </div>
+    </div>
 @endsection
 	<!-- End main content -->	
 

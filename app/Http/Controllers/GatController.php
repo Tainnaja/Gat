@@ -12,8 +12,6 @@ class GatController extends Controller
         ['fulltest']]);
      }
 
-
-
     public function index() {  
         return view('Gat.index');
     }
@@ -39,14 +37,6 @@ class GatController extends Controller
         return view('Gat.fulltest');
     }
 
-
-    // admin
-    public function admin() {  
-        return view('Gat.admin');
-    }
-
-    public function createTest() {  
-        return view('Gat.createTest');
-    }
+    
     
 }
