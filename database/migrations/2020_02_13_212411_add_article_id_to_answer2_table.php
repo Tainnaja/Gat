@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddExamIdToArcitleTable extends Migration
+class AddArticleIdToAnswer2Table extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class AddExamIdToArcitleTable extends Migration
      */
     public function up()
     {
-        Schema::table('articles', function (Blueprint $table) {
-            $table->bigInteger('exam_id')->unsigned()->nullable(); 
-            $table->foreign('exam_id')
+        Schema::table('answerdews', function (Blueprint $table) {
+            $table->bigInteger('article_id')->unsigned()->nullable(); //foreign key from article
+            $table->foreign('article_id')
             ->references('id')
-            ->on('exams')
+            ->on('articles')
             ->onDelete('cascade');
         });
     }
@@ -29,7 +29,7 @@ class AddExamIdToArcitleTable extends Migration
      */
     public function down()
     {
-        Schema::table('articles', function (Blueprint $table) {
+        Schema::table('Answerdew', function (Blueprint $table) {
             //
         });
     }

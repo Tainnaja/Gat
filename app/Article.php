@@ -20,4 +20,8 @@ class Article extends Model
     public function answers(){
         return $this->hasMany('App\Answer');
     }
+
+    public function answersdew(){
+        return $this->hasMany('App\Answerdew');
+    }
 }

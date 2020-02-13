@@ -32,6 +32,11 @@ Route::get('/fulltest', 'GatController@fulltest');
 
 Route::get('/test','TestController@index');
 
+
+
 //admin
 Route::get('/admin','ExamController@admin');
 Route::get('/createTest','ExamController@createTest');
+
+
+Route::post('/saveArticle','ExamController@saveArticle');
