@@ -75,19 +75,8 @@
 
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="nav navbar-nav mu-menu navbar-right">									
-								@guest				            
-									<li><a href="{{ route('login') }}">LOG IN</a></li>
-									<li><a href="{{ route('register') }}">SIGN IN</a></li>
-								@else
-									<li><a href="">HOME</a></li>					         
+							<ul class="nav navbar-nav mu-menu navbar-right">									
 									<li><a href="">ACHIEVEMENT</a></li>
-<<<<<<< HEAD
-									<li><a href="">YOUR SKILL</a></li>									
-									<li><a href="">ACCOUNT SETTING</a></li>
-									<li><a href="">{{ Auth::user()->user_name }}</a></li>	
-								@endguest	
-=======
 									<li><a href="">YOUR SKILL</a></li>
 									<li><a href="">QUESTIONNARIE</a></li>
 									<li><a href="">ACCOUNT SETTING</a></li>	
@@ -113,7 +102,6 @@
 											{{ csrf_field() }}
 										</form>		
 									@endguest							
->>>>>>> a5c047e912bfc67cba9d8be1c0d05052302ace5f
 								</ul>
 							</div><!-- /.navbar-collapse -->
 						</div><!-- /.container-fluid -->

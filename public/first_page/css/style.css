@@ -179,6 +179,13 @@ button:focus {
 	border: none;
 }
 
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+  }
+
 /*Wordpress default class*/
 
 .alignleft {
