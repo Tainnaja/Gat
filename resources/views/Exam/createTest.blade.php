@@ -54,83 +54,83 @@
                 <tbody>
                     <tr style="background:#F5F5F5">
                         <th scope="row">1</th>
-                        <td> <input class="" name="text1-1[]" type="text"></td>                                  
-                        <td> <input class="" name="set1-1-1[]" type="text"></td>
-                        <td> <input class="" name="set1-1-2[]" type="text"></td>
-                        <td> <input class="" name="set1-1-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-1-4[]" type="text"></td>                                 
+                        <td> <input class="" name="text1_1[]" type="text"></td>                                  
+                        <td> <input class="" name="set1_1_1[]" type="text"></td>
+                        <td> <input class="" name="set1_1_2[]" type="text"></td>
+                        <td> <input class="" name="set1_1_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_1_4[]" type="text"></td>                                 
                     </tr>
                     <tr style="background:#DCDCDC">
                         <th scope="row">2</th>
-                        <td> <input class="" name="text1-2[]" type="text"></td>
-                        <td> <input class="" name="set1-2-1[]" type="text"></td>
-                        <td> <input class="" name="set1-2-2[]" type="text"></td>
-                        <td> <input class="" name="set1-2-3[]" type="text"></td>  
-                        <td> <input class="" name="set1-2-4[]" type="text"></td>           
+                        <td> <input class="" name="text1_2[]" type="text"></td>
+                        <td> <input class="" name="set1_2_1[]" type="text"></td>
+                        <td> <input class="" name="set1_2_2[]" type="text"></td>
+                        <td> <input class="" name="set1_2_3[]" type="text"></td>  
+                        <td> <input class="" name="set1_2_4[]" type="text"></td>           
                     </tr>
                     <tr style="background:#F5F5F5">
                         <th scope="row">3</th>
-                        <td> <input class="" name="text1-3[]" type="text"></td>     
-                        <td> <input class="" name="set1-3-1[]" type="text"></td>
-                        <td> <input class="" name="set1-3-2[]" type="text"></td>
-                        <td> <input class="" name="set1-3-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-3-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_3[]" type="text"></td>     
+                        <td> <input class="" name="set1_3_1[]" type="text"></td>
+                        <td> <input class="" name="set1_3_2[]" type="text"></td>
+                        <td> <input class="" name="set1_3_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_3_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#DCDCDC">
                         <th scope="row">4</th>
-                        <td> <input class="" name="text1-4[]" type="text"></td>   
-                        <td> <input class="" name="set1-4-1[]" type="text"></td>
-                        <td> <input class="" name="set1-4-2[]" type="text"></td>
-                        <td> <input class="" name="set1-4-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-4-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_4[]" type="text"></td>   
+                        <td> <input class="" name="set1_4_1[]" type="text"></td>
+                        <td> <input class="" name="set1_4_2[]" type="text"></td>
+                        <td> <input class="" name="set1_4_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_4_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#F5F5F5">
                         <th scope="row">5</th>
-                        <td> <input class="" name="text1-5[]" type="text"></td>   
-                        <td> <input class="" name="set1-5-1[]" type="text"></td>
-                        <td> <input class="" name="set1-5-2[]" type="text"></td>
-                        <td> <input class="" name="set1-5-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-5-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_5[]" type="text"></td>   
+                        <td> <input class="" name="set1_5_1[]" type="text"></td>
+                        <td> <input class="" name="set1_5_2[]" type="text"></td>
+                        <td> <input class="" name="set1_5_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_5_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#DCDCDC">
                         <th scope="row">6</th>
-                        <td> <input class="" name="text1-6[]" type="text"></td>  
-                        <td> <input class="" name="set1-6-1[]" type="text"></td>
-                        <td> <input class="" name="set1-6-2[]" type="text"></td>
-                        <td> <input class="" name="set1-6-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-6-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_6[]" type="text"></td>  
+                        <td> <input class="" name="set1_6_1[]" type="text"></td>
+                        <td> <input class="" name="set1_6_2[]" type="text"></td>
+                        <td> <input class="" name="set1_6_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_6_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#F5F5F5">
                         <th scope="row">7</th>
-                        <td> <input class="" name="text1-7[]" type="text"></td>   
-                        <td> <input class="" name="set1-7-1[]" type="text"></td>
-                        <td> <input class="" name="set1-7-2[]" type="text"></td>
-                        <td> <input class="" name="set1-7-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-7-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_7[]" type="text"></td>   
+                        <td> <input class="" name="set1_7_1[]" type="text"></td>
+                        <td> <input class="" name="set1_7_2[]" type="text"></td>
+                        <td> <input class="" name="set1_7_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_7_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#DCDCDC">
                         <th scope="row">8</th>
-                        <td> <input class="" name="text1-8[]" type="text"></td>   
-                        <td> <input class="" name="set1-8-1[]" type="text"></td>
-                        <td> <input class="" name="set1-8-2[]" type="text"></td>
-                        <td> <input class="" name="set1-8-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-8-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_8[]" type="text"></td>   
+                        <td> <input class="" name="set1_8_1[]" type="text"></td>
+                        <td> <input class="" name="set1_8_2[]" type="text"></td>
+                        <td> <input class="" name="set1_8_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_8_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#F5F5F5">
                         <th scope="row">9</th>
-                        <td> <input class="" name="text1-9[]" type="text"></td>   
-                        <td> <input class="" name="set1-9-1[]" type="text"></td>
-                        <td> <input class="" name="set1-9-2[]" type="text"></td>
-                        <td> <input class="" name="set1-9-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-9-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_9[]" type="text"></td>   
+                        <td> <input class="" name="set1_9_1[]" type="text"></td>
+                        <td> <input class="" name="set1_9_2[]" type="text"></td>
+                        <td> <input class="" name="set1_9_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_9_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#DCDCDC">
                         <th scope="row">10</th>
-                        <td> <input class="" name="text1-10[]" type="text"></td>   
-                        <td> <input class="" name="set1-10-1[]" type="text"></td>
-                        <td> <input class="" name="set1-10-2[]" type="text"></td>
-                        <td> <input class="" name="set1-10-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-10-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_10[]" type="text"></td>   
+                        <td> <input class="" name="set1_10_1[]" type="text"></td>
+                        <td> <input class="" name="set1_10_2[]" type="text"></td>
+                        <td> <input class="" name="set1_10_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_10_4[]" type="text"></td>     
                     </tr>
                 </tbody>
             </table>
@@ -166,83 +166,83 @@
                 <tbody>
                     <tr style="background:#F5F5F5">
                         <th scope="row">1</th>
-                        <td> <input class="" name="text1-1[]" type="text"></td>                                  
-                        <td> <input class="" name="set1-1-1[]" type="text"></td>
-                        <td> <input class="" name="set1-1-2[]" type="text"></td>
-                        <td> <input class="" name="set1-1-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-1-4[]" type="text"></td>                                 
+                        <td> <input class="" name="text1_1[]" type="text"></td>                                  
+                        <td> <input class="" name="set1_1_1[]" type="text"></td>
+                        <td> <input class="" name="set1_1_2[]" type="text"></td>
+                        <td> <input class="" name="set1_1_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_1_4[]" type="text"></td>                                 
                     </tr>
                     <tr style="background:#DCDCDC">
                         <th scope="row">2</th>
-                        <td> <input class="" name="text1-2[]" type="text"></td>
-                        <td> <input class="" name="set1-2-1[]" type="text"></td>
-                        <td> <input class="" name="set1-2-2[]" type="text"></td>
-                        <td> <input class="" name="set1-2-3[]" type="text"></td>  
-                        <td> <input class="" name="set1-2-4[]" type="text"></td>           
+                        <td> <input class="" name="text1_2[]" type="text"></td>
+                        <td> <input class="" name="set1_2_1[]" type="text"></td>
+                        <td> <input class="" name="set1_2_2[]" type="text"></td>
+                        <td> <input class="" name="set1_2_3[]" type="text"></td>  
+                        <td> <input class="" name="set1_2_4[]" type="text"></td>           
                     </tr>
                     <tr style="background:#F5F5F5">
                         <th scope="row">3</th>
-                        <td> <input class="" name="text1-3[]" type="text"></td>     
-                        <td> <input class="" name="set1-3-1[]" type="text"></td>
-                        <td> <input class="" name="set1-3-2[]" type="text"></td>
-                        <td> <input class="" name="set1-3-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-3-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_3[]" type="text"></td>     
+                        <td> <input class="" name="set1_3_1[]" type="text"></td>
+                        <td> <input class="" name="set1_3_2[]" type="text"></td>
+                        <td> <input class="" name="set1_3_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_3_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#DCDCDC">
                         <th scope="row">4</th>
-                        <td> <input class="" name="text1-4[]" type="text"></td>   
-                        <td> <input class="" name="set1-4-1[]" type="text"></td>
-                        <td> <input class="" name="set1-4-2[]" type="text"></td>
-                        <td> <input class="" name="set1-4-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-4-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_4[]" type="text"></td>   
+                        <td> <input class="" name="set1_4_1[]" type="text"></td>
+                        <td> <input class="" name="set1_4_2[]" type="text"></td>
+                        <td> <input class="" name="set1_4_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_4_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#F5F5F5">
                         <th scope="row">5</th>
-                        <td> <input class="" name="text1-5[]" type="text"></td>   
-                        <td> <input class="" name="set1-5-1[]" type="text"></td>
-                        <td> <input class="" name="set1-5-2[]" type="text"></td>
-                        <td> <input class="" name="set1-5-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-5-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_5[]" type="text"></td>   
+                        <td> <input class="" name="set1_5_1[]" type="text"></td>
+                        <td> <input class="" name="set1_5_2[]" type="text"></td>
+                        <td> <input class="" name="set1_5_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_5_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#DCDCDC">
                         <th scope="row">6</th>
-                        <td> <input class="" name="text1-6[]" type="text"></td>  
-                        <td> <input class="" name="set1-6-1[]" type="text"></td>
-                        <td> <input class="" name="set1-6-2[]" type="text"></td>
-                        <td> <input class="" name="set1-6-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-6-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_6[]" type="text"></td>  
+                        <td> <input class="" name="set1_6_1[]" type="text"></td>
+                        <td> <input class="" name="set1_6_2[]" type="text"></td>
+                        <td> <input class="" name="set1_6_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_6_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#F5F5F5">
                         <th scope="row">7</th>
-                        <td> <input class="" name="text1-7[]" type="text"></td>   
-                        <td> <input class="" name="set1-7-1[]" type="text"></td>
-                        <td> <input class="" name="set1-7-2[]" type="text"></td>
-                        <td> <input class="" name="set1-7-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-7-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_7[]" type="text"></td>   
+                        <td> <input class="" name="set1_7_1[]" type="text"></td>
+                        <td> <input class="" name="set1_7_2[]" type="text"></td>
+                        <td> <input class="" name="set1_7_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_7_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#DCDCDC">
                         <th scope="row">8</th>
-                        <td> <input class="" name="text1-8[]" type="text"></td>   
-                        <td> <input class="" name="set1-8-1[]" type="text"></td>
-                        <td> <input class="" name="set1-8-2[]" type="text"></td>
-                        <td> <input class="" name="set1-8-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-8-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_8[]" type="text"></td>   
+                        <td> <input class="" name="set1_8_1[]" type="text"></td>
+                        <td> <input class="" name="set1_8_2[]" type="text"></td>
+                        <td> <input class="" name="set1_8_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_8_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#F5F5F5">
                         <th scope="row">9</th>
-                        <td> <input class="" name="text1-9[]" type="text"></td>   
-                        <td> <input class="" name="set1-9-1[]" type="text"></td>
-                        <td> <input class="" name="set1-9-2[]" type="text"></td>
-                        <td> <input class="" name="set1-9-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-9-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_9[]" type="text"></td>   
+                        <td> <input class="" name="set1_9_1[]" type="text"></td>
+                        <td> <input class="" name="set1_9_2[]" type="text"></td>
+                        <td> <input class="" name="set1_9_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_9_4[]" type="text"></td>     
                     </tr>
                     <tr style="background:#DCDCDC">
                         <th scope="row">10</th>
-                        <td> <input class="" name="text1-10[]" type="text"></td>   
-                        <td> <input class="" name="set1-10-1[]" type="text"></td>
-                        <td> <input class="" name="set1-10-2[]" type="text"></td>
-                        <td> <input class="" name="set1-10-3[]" type="text"></td>   
-                        <td> <input class="" name="set1-10-4[]" type="text"></td>     
+                        <td> <input class="" name="text1_10[]" type="text"></td>   
+                        <td> <input class="" name="set1_10_1[]" type="text"></td>
+                        <td> <input class="" name="set1_10_2[]" type="text"></td>
+                        <td> <input class="" name="set1_10_3[]" type="text"></td>   
+                        <td> <input class="" name="set1_10_4[]" type="text"></td>     
                     </tr>
                 </tbody>
             </table>
