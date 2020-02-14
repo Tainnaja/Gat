@@ -12,10 +12,12 @@
             <div class="row" style="margin-top:-50px;margin-bottom:50px;margin-left:75px;">
                  <h1>แบบทดสอบกับข้อสอบจริง </h1>
             </div>
-            <div class="row">
-                <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">รอ admin เพิ่ม  </button>                                    
-            </div>
-            <div class="row">
+            @foreach($fulltests as $fulltest)
+                <div class="row">
+                    <button class=" btn-learn"  onclick="location.href='{{ url('fulltest/'.$fulltest->id) }}'">{{ '' .$fulltest->exam_name }}</button>                                    
+                </div>
+            @endforeach
+            <!-- <div class="row">
                  <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">รอ admin เพิ่ม  </button>    
             </div>
             <div class="row">
@@ -29,7 +31,7 @@
             </div>
             <div class="row">
                    <button class=" btn-learn"  onclick="location.href='{{ url('#') }}'">รอ admin เพิ่ม  </button>    
-            </div>
+            </div> -->
         </div>
         <div class="col-xs-6 col-md-1"></div> 
         </div>

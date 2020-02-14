@@ -27,11 +27,10 @@ Route::get('/theory', 'GatController@theory');
 Route::get('/technique', 'GatController@technique');
 Route::get('/relationship', 'GatController@relationship');
 Route::get('/minitest', 'GatController@minitest');
-Route::get('/fulltest', 'GatController@fulltest');
-
-
 Route::get('/test','TestController@index');
 
+// Route::get('/fulltest', 'GatController@fulltest');
+Route::resource('fulltest','FulltestController');
 
 
 //admin

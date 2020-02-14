@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Answerdew;
+use App\Article;
+use App\Exam;
 class GatController extends Controller
 {
 
@@ -33,10 +35,6 @@ class GatController extends Controller
     public function minitest() {  
         return view('Gat.minitest');
     }
-    public function fulltest() {  
-        return view('Gat.fulltest');
-    }
 
-    
     
 }
