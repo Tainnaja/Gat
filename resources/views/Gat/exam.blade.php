@@ -22,6 +22,8 @@
                  {!! '' .$articles[0]->article_detail !!}
             </div>
             <iframe class="flow-gat" src="http://127.0.0.1:8000/test"> </iframe>
+             {!! Form::open(['url' => 'sendAnswer','method' => 'POST','files' => true]) !!} 
+             <input name="examID" value="{{ '' .$exam->id}}" type="hidden">
             <table class="table table-bordered">
                 <thead>
                     <tr style="background:black; color:#F8F8FF;">
@@ -225,7 +227,7 @@
             <div class="row" style="margin-top:-500px; margin-left: 160px">
                 <button id="sendSet2" class=" btn-learn">ส่งคำตอบ</button>                                    
             </div>
-         
+            {!! Form::close() !!} 
 
          <div style="margin-bottom:200px"></div>
 @endsection

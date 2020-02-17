@@ -63,10 +63,10 @@ class CreateAnswer2Table extends Migration
             $table->string('set1_9_2')->nullable();
             $table->string('set1_9_3')->nullable();
             $table->string('set1_9_4')->nullable();
-            $table->string('set1_1_-1')->nullable();
-            $table->string('set1_1_-2')->nullable();
-            $table->string('set1_1_-3')->nullable();
-            $table->string('set1_1_-4')->nullable();       
+            $table->string('set1_10_1')->nullable();
+            $table->string('set1_10_2')->nullable();
+            $table->string('set1_10_3')->nullable();
+            $table->string('set1_10_4')->nullable();       
             $table->timestamps();
         });
     }

@@ -31,7 +31,7 @@ Route::get('/test','TestController@index');
 
 // Route::get('/fulltest', 'GatController@fulltest');
 Route::resource('fulltest','FulltestController');
-
+Route::post('/sendAnswer','FulltestController@sendanswer');
 
 //admin
 Route::get('/admin','ExamController@admin');

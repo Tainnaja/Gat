@@ -13,7 +13,7 @@ class CreateHistorysTable extends Migration
      */
     public function up()
     {
-        Schema::create('historys', function (Blueprint $table) {                    
+        Schema::create('histories', function (Blueprint $table) {                    
 
             $table->bigIncrements('id')->unsigned();
             $table->integer('score_1');
@@ -30,6 +30,6 @@ class CreateHistorysTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('historys');
+        Schema::dropIfExists('histories');
     }
 }
