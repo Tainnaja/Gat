@@ -4,15 +4,15 @@
     <!-- <div type="hidden">  {{$i = 0   }} </div>
     <div  hidden> {{ @$i += 1 }} </div> -->
         <div style="margin-top:90px"></div>
-            <h1> {{ 'ข้อสอบชุดที่ :' .$exam->exam_name }} </h1>
+            
 
-         <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px">           
+         <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px ">           
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'set1')">ชุดที่1</button>
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'set2')">ชุดที่2</button>           
             <button class="w3-bar-item w3-button tablink" onclick="location.href='{{ url('/learn') }}'"> <span class="glyphicon  glyphicon glyphicon-arrow-left " aria-hidden="true"></span>   ย้อนกลับ</button>
         </div>  
              
-        <!-- @foreach($articles as $article) -->
+        <h1 style="margin-left: 300px"> {{ 'ข้อสอบชุดที่ :' .$exam->exam_name }} </h1>
              
 
         <div id="set1" class="w3-container city w3-animate-zoom" style="display:none; margin-left:125px; margin-bottom: 500px;display:block">
@@ -118,7 +118,7 @@
                   
         </div>       
             
-         <!-- @endforeach         -->
+      
 
          <div id="set2" class="w3-container city w3-animate-zoom" style="display:none; margin-left:125px; margin-bottom: 500px;">
             <h1>ชุดที่ 2 </h1>   
@@ -222,12 +222,12 @@
          
         </div>
        
-            <div class="row">
+            <div class="row" style="margin-top:-500px; margin-left: 160px">
                 <button id="sendSet2" class=" btn-learn">ส่งคำตอบ</button>                                    
             </div>
          
 
-         <div style="margin-bottom:500px"></div>
+         <div style="margin-bottom:200px"></div>
 @endsection
 
 
