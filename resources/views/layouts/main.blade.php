@@ -77,7 +77,7 @@
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav mu-menu navbar-right">									
 									<li><a href="">ACHIEVEMENT</a></li>
-									<li><a href="">YOUR SKILL</a></li>
+									<li><a href="{{ url('/yourskill') }}">YOUR SKILL</a></li>
 									<li><a href="">QUESTIONNARIE</a></li>
 									<li><a href="">ACCOUNT SETTING</a></li>	
 									@guest			            

@@ -28,6 +28,7 @@ Route::get('/technique', 'GatController@technique');
 Route::get('/relationship', 'GatController@relationship');
 Route::get('/minitest', 'GatController@minitest');
 Route::get('/test','TestController@index');
+Route::get('/yourskill','GatController@yourskill');
 
 // Route::get('/fulltest', 'GatController@fulltest');
 Route::resource('fulltest','FulltestController');

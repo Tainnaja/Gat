@@ -111,8 +111,9 @@ class FulltestController extends Controller
         $history->total_score = $sumScore;
         $history->exam_id = $input['examID'];
         $history->exam_id = $input['examID'];
-        $history->updated_at = Carbon::createFromFormat('Y-m-d H', '1975-05-21 22');
-        $history->created_at = Carbon::createFromFormat('Y-m-d H', '1975-05-21 22');
+        $history->updated_at = Carbon::now();
+        $history->created_at = Carbon::now();
+        // $history->created_at = Carbon::createFromFormat('Y-m-d H', '1975-05-21 22');
         $history->user_id = Auth::user()->id;
         $history->save();
 
