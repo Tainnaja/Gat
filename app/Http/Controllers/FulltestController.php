@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Answerdew;
 use App\Article;
 use App\Exam;
+use App\Skill;
 use Auth;
 use Carbon\Carbon;
 use App\History;
@@ -211,6 +212,15 @@ class FulltestController extends Controller
         $correct2 = 0;
         $worng1 = 0;
         $worng2 = 0;
+
+        $a = 0;
+        $d = 0;
+        $f = 0;
+        $h = 0;
+        $ansa = 0;
+        $ansd = 0;
+        $ansf = 0;
+        $ansh = 0;
         $input = $request->all();
         // $exam = Exam::find($input['examID']);
         $articles = Article::where( 'exam_id', '=', $input['examID'] )->get(); 
@@ -227,12 +237,45 @@ class FulltestController extends Controller
                         $worng1 ++;
                     }
                 }
-                if(!empty($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''])){
+                if(!empty($answers1[0]['set1_' . strval($i) .'_' . strval($j)] )){
                     $ans1 ++;
+                    // dd(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1));
+                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'a'){
+                        $a ++ ;
+                        if($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][0]){
+                            $ansa ++;
+                        }
+                        // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
+                    }
+                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'd'){
+                        $d ++ ;
+                        // dd(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1));
+                        if($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][0]){
+                            $ansd ++;
+                        }
+                        // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
+                    }
+                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'f'){
+                        $f ++ ;
+                        if($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][0]){
+                            $ansf ++;
+                        }
+                        // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
+                    }
+                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == '9'){
+                        $h ++ ;
+                        if($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][0]){
+                            $ansh ++;
+                        }
+                        // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
+                    }
+                    // $char = strpos($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''],'1');
+                    // dd($char);
                 }
                 // dd($input['set1_' . strval($i) .'_' . strval($j) . '']);
             }
         }
+        // dd($ansd);
         for($i = 1 ; $i <11 ;$i++){
             for($j = 1 ; $j <5 ;$j++){
                 if(!empty($input['set1_' . strval($i) .'_' . strval($j) . ''][1])){
@@ -245,10 +288,41 @@ class FulltestController extends Controller
                 }
                 if(!empty($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''])){
                     $ans2 ++;
+                    // dd(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1));
+                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'a'){
+                        $a ++ ;
+                        if($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][1]){
+                            $ansa ++;
+                        }
+                        // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
+                    }
+                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'd'){
+                        $d ++ ;
+                        if($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][1]){
+                            $ansd ++;
+                        }
+                        // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
+                    }
+                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'f'){
+                        $f ++ ;
+                        if($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][1]){
+                            $ansf ++;
+                        }
+                        // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
+                    }
+                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == '9'){
+                        $h ++ ;
+                        if($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][1]){
+                            $ansh ++;
+                        }
+                        // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
+                    }
                 }
                 // dd($input['set1_' . strval($i) .'_' . strval($j) . '']);
             }
         }
+
+
         $score1 = ((75/$ans1) * $correct1) - ($worng1 *3);
         $score2 = ((75/$ans2) * $correct2) - ($worng2 *3);
         $sumScore = $score1 + $score2;
@@ -271,6 +345,53 @@ class FulltestController extends Controller
         // $history->created_at = Carbon::createFromFormat('Y-m-d H', '1975-05-21 22');
         $history->user_id = Auth::user()->id;
         $history->save();
+
+        $suma = ($ansa/ $a)*100;
+        $sumd = ($ansd/ $d)*100;
+        $sumf = ($ansf/ $f)*100;
+        $sumh = ($ansh/ $h)*100;
+        $sum = ($suma  +$sumd +$sumf +$sumh)/4;
+
+
+        $skills = Skill::where( 'user_id', '=', Auth::user()->id )->get(); 
+    //    dd( $skills);
+        if(empty($skills[0])){
+            $s = new Skill;
+            $s->updated_at = Carbon::now();
+            $s->created_at = Carbon::now();
+            $s->round_number = 0 ;
+            $s->total_skill = $sum ;
+            $s->skill_A =  $suma ;
+            $s->skill_D =  $sumd ;
+            $s->skill_F =  $sumf ;
+            $s->skill_99H =  $sumh ;
+            $s->user_id =   Auth::user()->id  ;
+            $s->save();
+        }
+        else {
+
+            $s = Skill::findOrFail($skills[0]->id);
+            
+            $sumaa = ((int)$suma + (int)$s->skill_A)/2;
+            $sumdd = ((int)$sumd + (int)$s->skill_D)/2;
+            $sumff = ((int)$sumf + (int)$s->skill_F)/2;
+            $sumhh = ((int)$sumh + (int)$s->skill_99H)/2;  
+            $summ =  ((int)$sum + (int)$s->total_skill)/2;       
+            
+            $s->skill_A = $sumaa;
+            $s->skill_D = $sumdd;
+            $s->skill_F = $sumff;
+            $s->skill_99H = $sumhh;
+            $s->total_skill = $summ;
+            $s->save();
+            // $sum = ($suma  +$sumd +$sumf +$sumh)/4;
+            // dd(  $summ );
+        }
+
+        // dd($skills);
+
+
+
 
         return redirect('learn');
         // dd($worng1);

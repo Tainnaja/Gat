@@ -10,7 +10,66 @@
         </div>       
 
         <div id="set1" class="w3-container city w3-animate-zoom" style="display:none; margin-left:125px; margin-bottom: 500px;display:block">
-        วิเคราะห์ความสามารถ
+        
+
+        
+                        <div class="mu-counter-block" style="margin-top:90px ">
+								<div class="row">
+
+									<!-- Start Single Counter -->
+									<div class="col-md-3 col-sm-6">
+										<div class="mu-single-counter">
+											<!-- <i class="fa fa-files-o" aria-hidden="true"></i> -->
+											<div class="counter-value" data-count="05">{{$skill[0]->skill_A .'%'}}</div>
+											<h5 class="mu-counter-name">อัตราความถูกต้องของความสัมพันธ์แบบก่อให้เกิด</h5>
+										</div>
+									</div>
+									<!-- / Single Counter -->
+
+									<!-- Start Single Counter -->
+									<div class="col-md-3 col-sm-6">
+										<div class="mu-single-counter">
+											<!-- <i class="fa fa-file-text-o" aria-hidden="true"></i> -->
+											<div class="counter-value" data-count="42">{{$skill[0]->skill_D .'%'}}</div>
+											<h5 class="mu-counter-name">อัตราความถูกต้องของความสัมพันธ์แบบยับยั้ง</h5>
+										</div>
+									</div>
+									<!-- / Single Counter -->
+
+									<!-- Start Single Counter -->
+									<div class="col-md-3 col-sm-6">
+										<div class="mu-single-counter">
+											<!-- <i class="fa fa-users" aria-hidden="true"></i> -->
+											<div class="counter-value" data-count="1055">{{$skill[0]->skill_F .'%'}}</div>
+											<h5 class="mu-counter-name">อัตราความถูกต้องของความสัมพันธ์แบบองค์ประกอบ</h5>
+										</div>
+									</div>
+									<!-- / Single Counter -->
+
+									<!-- Start Single Counter -->
+									<div class="col-md-3 col-sm-6">
+										<div class="mu-single-counter">
+											<!-- <i class="fa fa-trophy" aria-hidden="true"></i> -->
+											<div class="counter-value" data-count="428">{{$skill[0]->skill_99H .'%'}}</div>
+											<h5 class="mu-counter-name">อัตราความถูกต้องของความสัมพันธ์แบบ 99H</h5>
+										</div>
+									</div>
+									<!-- / Single Counter -->
+
+								</div>
+							</div>
+            
+
+                        <div style="margin-top:-400px;margin-left:0px;margin-bottom:200px;"> 
+                            <!-- <div class="col-md-6 col-sm-12"> -->
+                                <div class="mu-single-counter">                                    
+                                    <div class="counter-value" data-count="1055" style="margin-left:0px;">{{$skill[0]->total_skill .'%'}}</div>
+                                    <h3>อัตราความถูกต้องทั้งหมด</h3>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                
+
         </div>
         <div id="set2" class="w3-container city w3-animate-zoom" style="display:none; margin-left:125px; margin-bottom: 500px;">
             <table class="table table-bordered">

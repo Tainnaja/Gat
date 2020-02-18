@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Answerdew;
 use App\Article;
 use App\Exam;
+use App\Skill;
 use App\History;
 use Auth;
 class GatController extends Controller
@@ -45,9 +46,12 @@ class GatController extends Controller
             // dd($articles );  
             $histories[$i]->exam_id =  $articles[0]->article_name;
         }
+
+        $skill = Skill::where( 'user_id', '=', Auth::user()->id )->get();
+        // dd($skill);
         
                 // dd($histories);        
-        return view('Gat.yourskill', compact('histories','articles'));
+        return view('Gat.yourskill', compact('histories','articles','skill'));
     }
     public function achievement() {  
         $histories = History::where( 'user_id', '=', Auth::user()->id )->get(); 
