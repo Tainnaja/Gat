@@ -32,6 +32,7 @@ Route::get('/yourskill','GatController@yourskill');
 Route::get('/achievement','GatController@achievement');
 
 
+
 // Route::get('/fulltest', 'GatController@fulltest');
 Route::resource('fulltest','FulltestController');
 Route::post('/sendAnswer','FulltestController@sendanswer');
@@ -41,6 +42,7 @@ Route::post('/sendAnswer','FulltestController@sendanswer');
 //admin
 Route::get('/admin','ExamController@admin');
 Route::get('/createTest','ExamController@createTest');
+Route::get('/editarticle','ExamController@editarticle');
 
 
 Route::post('/saveArticle','ExamController@saveArticle');

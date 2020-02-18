@@ -13,7 +13,7 @@ class ExamController extends Controller
 
     public function __construct(){
         $this->middleware('auth', ['only' =>
-        ['admin','createTest']]);
+        ['admin','createTest'.'editarticle']]);
      }
     // admin
     public function admin() {  
@@ -146,5 +146,17 @@ class ExamController extends Controller
             return view('Gat.index');
         }
         
+    }
+
+    
+    public function editarticle() {  
+        if (Auth::user()->role_id===2) 
+        {
+            $exams = Exam::get();
+            return view('Exam.editarticle', compact('exams'));
+        }
+        else{
+            return view('Gat.index');
+        }
     }
 }
