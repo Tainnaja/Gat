@@ -14,7 +14,7 @@ class FulltestController extends Controller
 
     public function __construct(){
         $this->middleware('auth', ['only' =>
-        ['index','show','sendanswer','edit','update']]);
+        ['index','show','sendanswer','edit','update','destroy']]);
      }
     public function index() {  
         try   
@@ -277,4 +277,20 @@ class FulltestController extends Controller
         // dd($input);
 
     }
+
+    public function destroy($id){
+        if (Auth::user()->role_id===2) {
+
+        $exam = Exam::findOrFail($id);
+
+            $exam->delete();
+           
+            return redirect('/editarticle');
+        }
+        else {
+            return redirect('/');
+        }
+        
+    }
+
 }

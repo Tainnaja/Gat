@@ -20,7 +20,11 @@
                         <td> {{ '' .$exam->created_at }}</td>    
                         <td>{{ '' .$exam->updated_at }} </td>  
                         <td> <a href="{{ url("fulltest/{$exam->id}/edit") }}">  แก้ไข </a></td>  
-                        <td> </td>  
+                        <td>
+                            {!! Form::open(['method' => 'DELETE', 'url'=>'fulltest/'.$exam->id]) !!}                                
+                            {!! Form::submit( 'ลบ' , ['class'=>'btn btn-danger']) !!}
+                            {!! Form::close() !!}
+                         </td>  
                     </tr>
                     @endforeach
                 </tbody>
