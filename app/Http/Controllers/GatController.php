@@ -49,6 +49,37 @@ class GatController extends Controller
                 // dd($histories);        
         return view('Gat.yourskill', compact('histories','articles'));
     }
+    public function achievement() {  
+        $histories = History::where( 'user_id', '=', Auth::user()->id )->get(); 
+        $exam = 0;
+        $achievement = 0;
+        $score =0;
+        for($i=0; $i< count($histories); $i++){
+            $score += $histories[$i]->total_score;
+            $exam ++;
+        }
+
+        if((($exam*150)/$score) == 1){
+            $achievement = 1;
+        }
+        else if((($exam*150)/$score) >1 && (($exam*150)/$score) < 1.1 ){
+            $achievement = 2;
+        }
+        else if((($exam*150)/$score) >1.1 && (($exam*150)/$score) < 1.4 ){
+            $achievement = 3;
+        }
+        else if((($exam*150)/$score) >1.4 && (($exam*150)/$score) < 1.6 ){
+            $achievement = 5;
+        }
+        else{
+            $achievement = 6;
+        }
+
+        // dd( $achievement );
+        return view('Gat.achievement', compact('achievement'));
+    }
+
+    
 
     
 }

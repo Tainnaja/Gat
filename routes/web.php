@@ -29,10 +29,14 @@ Route::get('/relationship', 'GatController@relationship');
 Route::get('/minitest', 'GatController@minitest');
 Route::get('/test','TestController@index');
 Route::get('/yourskill','GatController@yourskill');
+Route::get('/achievement','GatController@achievement');
+
 
 // Route::get('/fulltest', 'GatController@fulltest');
 Route::resource('fulltest','FulltestController');
 Route::post('/sendAnswer','FulltestController@sendanswer');
+
+
 
 //admin
 Route::get('/admin','ExamController@admin');
