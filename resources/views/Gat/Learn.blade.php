@@ -2,7 +2,7 @@
 
 <!-- Start Featured Slider -->
 @section('content')
-
+    
 
     <div class="container" style="margin-top:140px ; ">
         <div class="row">
@@ -24,12 +24,25 @@
                 <button class=" btn-learn"  onclick="location.href='{{ url('/minitest') }}'">5. แบบทดสอบบทความขนาดเล็ก</button>              
             </div>
             <div class="row">
-                <button class=" btn-learn"  onclick="location.href='{{ url('/fulltest') }}'">6. แบบทดสอบกับข้อสอบจริง</button>              
+                <button class=" btn-learn"  onclick="location.href='{{ url('/fulltest') }}'">6. แบบทดสอบกับข้อสอบจริง </button>              
             </div>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+            
         </div>
         <div class="col-xs-6 col-md-1"></div> 
         </div>
     </div>
+    <!-- After Finish Exams Show Modal -->
+    @isset($sumScore)
+    <script>
+        $(function() {
+            $('#myModal').modal('show');
+        });
+    </script>
+    @endisset
+    
+    
+    
 @endsection
 	<!-- End main content -->	
 
@@ -50,3 +63,27 @@
             color: #00CCFF;
         }
     </style>
+
+        
+
+        <!-- Modal -->
+    <div class="modal fade in" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">ส่งคำตอบแล้ว</h4>
+            </div>
+            <div class="modal-body">
+            <center><img src="{{ URL::asset('image/write-icon.png') }}" alt="Write" style="width:100px;height:100px;" ></center>
+            <center><h2>คะแนนที่ได้ {{floor($sumScore ?? '')}} /150</h2></center>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">ปิด</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>

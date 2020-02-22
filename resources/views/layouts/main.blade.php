@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Kindle : Home</title>
     <!-- Favicon -->
@@ -82,7 +85,7 @@
 									<!-- <li><a href="">ACCOUNT SETTING</a></li>	 -->
 									@guest			            
 										<li><a  href="{{ url('/login') }}">LOG IN</a></li>
-										<li><a href="">SIGN IN</a></li>
+										<li><a href="{{ url('/register') }}">SIGN IN</a></li>
 									@else
 										@if(Auth::user()->role_id===2)
 											<li class="nav-item">												

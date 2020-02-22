@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\AnswerRequest;
 use App\Answerdew;
 use App\Article;
 use App\Exam;
@@ -205,13 +206,14 @@ class FulltestController extends Controller
     }
 
 
-    public function sendanswer(Request $request){
+    public function sendanswer(AnswerRequest $request){
         $ans1 = 0;
         $ans2 = 0;
         $correct1 = 0;
         $correct2 = 0;
         $worng1 = 0;
         $worng2 = 0;
+        $checker = 0;
 
         $a = 0;
         $d = 0;
@@ -230,41 +232,45 @@ class FulltestController extends Controller
         for($i = 1 ; $i <11 ;$i++){
             for($j = 1 ; $j <5 ;$j++){
                 if(!empty($input['set1_' . strval($i) .'_' . strval($j) . ''][0])){
-                    if($input['set1_' . strval($i) .'_' . strval($j) . ''][0] == $answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']){
-                        $correct1 ++;
+                    for($k = 1 ; $k <5 ;$k++){
+                        if($input['set1_' . strval($i) .'_' . strval($j) . ''][0] == $answers1[0]['set1_' . strval($i) .'_' . strval($k) . '']){
+                            $correct1 ++;
+                            $checker ++;
+                        }                        
                     }
-                    else {
-                        $worng1 ++;
+                    if($checker==0){
+                        $worng1 ++;                       
                     }
+                    
                 }
                 if(!empty($answers1[0]['set1_' . strval($i) .'_' . strval($j)] )){
                     $ans1 ++;
                     // dd(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1));
-                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'a'){
+                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,2) == 'A'){
                         $a ++ ;
-                        if($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][0]){
+                        if($checker>0){
                             $ansa ++;
                         }
                         // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
                     }
-                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'd'){
+                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,2) == 'D'){
                         $d ++ ;
                         // dd(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1));
-                        if($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][0]){
+                        if($checker>0){
                             $ansd ++;
                         }
                         // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
                     }
-                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'f'){
+                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,2) == 'F'){
                         $f ++ ;
-                        if($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][0]){
+                        if($checker>0){
                             $ansf ++;
                         }
                         // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
                     }
-                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == '9'){
+                    if(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,2) == 'H'){
                         $h ++ ;
-                        if($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][0]){
+                        if($checker>0){
                             $ansh ++;
                         }
                         // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
@@ -273,52 +279,57 @@ class FulltestController extends Controller
                     // dd($char);
                 }
                 // dd($input['set1_' . strval($i) .'_' . strval($j) . '']);
+                $checker = 0;
             }
         }
-        // dd($ansd);
+        //dd($correct1,$worng1,$ansa,$ansd,$ansf,$ansh);
         for($i = 1 ; $i <11 ;$i++){
             for($j = 1 ; $j <5 ;$j++){
                 if(!empty($input['set1_' . strval($i) .'_' . strval($j) . ''][1])){
-                    if($input['set1_' . strval($i) .'_' . strval($j) . ''][1] == $answers2[0]['set1_' . strval($i) .'_' . strval($j) . '']){
-                        $correct2 ++;
+                    for($k = 1 ; $k <5 ;$k++){
+                        if($input['set1_' . strval($i) .'_' . strval($j) . ''][1] == $answers2[0]['set1_' . strval($i) .'_' . strval($k) . '']){
+                            $correct2 ++;
+                            $checker ++;
+                        }                        
                     }
-                    else {
-                        $worng2 ++;
+                    if($checker==0){
+                        $worng2 ++;                       
                     }
                 }
                 if(!empty($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''])){
                     $ans2 ++;
                     // dd(substr($answers1[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1));
-                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'a'){
+                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,2) == 'A'){
                         $a ++ ;
-                        if($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][1]){
+                        if($checker>0){
                             $ansa ++;
                         }
                         // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
                     }
-                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'd'){
+                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,2) == 'D'){
                         $d ++ ;
-                        if($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][1]){
+                        if($checker>0){
                             $ansd ++;
                         }
                         // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
                     }
-                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == 'f'){
+                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,2) == 'F'){
                         $f ++ ;
-                        if($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][1]){
+                        if($checker>0){
                             $ansf ++;
                         }
                         // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
                     }
-                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,0,1) == '9'){
+                    if(substr($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] ,2) == 'H'){
                         $h ++ ;
-                        if($answers2[0]['set1_' . strval($i) .'_' . strval($j) . ''] == $input['set1_' . strval($i) .'_' . strval($j) . ''][1]){
+                        if($checker>0){
                             $ansh ++;
                         }
                         // dd($answers1[0]['set1_' . strval($i) .'_' . strval($j) . '']);
                     }
                 }
                 // dd($input['set1_' . strval($i) .'_' . strval($j) . '']);
+                $checker = 0;
             }
         }
 
@@ -393,9 +404,7 @@ class FulltestController extends Controller
 
 
 
-        return redirect('learn');
-        // dd($worng1);
-        // dd($input);
+        return view('Gat.learn', compact('sumScore'));        
 
     }
 

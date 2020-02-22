@@ -42,16 +42,16 @@ class GatController extends Controller
     public function yourskill(){
         $histories = History::where( 'user_id', '=', Auth::user()->id )->get(); 
         for($i=0; $i< count($histories); $i++){
-            $articles = Article::where( 'exam_id', '=', $histories[$i]->exam_id )->get(); 
-            // dd($articles );  
-            $histories[$i]->exam_id =  $articles[0]->article_name;
+            $exams = Exam::where( 'id', '=', $histories[$i]->exam_id )->get(); 
+            // dd($exams );  
+            $histories[$i]->exam_id =  $exams[0]->exam_name;
         }
 
         $skill = Skill::where( 'user_id', '=', Auth::user()->id )->get();
         // dd($skill);
         
                 // dd($histories);        
-        return view('Gat.yourskill', compact('histories','articles','skill'));
+        return view('Gat.yourskill', compact('histories','exams','skill'));
     }
     public function achievement() {  
         $histories = History::where( 'user_id', '=', Auth::user()->id )->get(); 

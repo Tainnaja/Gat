@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\CreatTestRequest;
+
 use Auth;
 use App\Answerdew;
 use App\Article;
@@ -19,7 +21,7 @@ class ExamController extends Controller
     public function admin() {  
         try   
         {
-            if (Auth::user()->role_id===2) 
+            if (Auth::user()->role_id==2) 
             {
                 return view('Exam.admin');
             }
@@ -37,7 +39,7 @@ class ExamController extends Controller
     public function createTest() {  
         try   
         {
-            if (Auth::user()->role_id===2) 
+            if (Auth::user()->role_id==2) 
             {
                 return view('Exam.createTest');
             }
@@ -52,10 +54,10 @@ class ExamController extends Controller
         
     }
 
-    public function saveArticle(Request $request) {  
+    public function saveArticle(CreatTestRequest $request) {  
         try   
         {
-            if (Auth::user()->role_id===2) 
+            if (Auth::user()->role_id==2) 
             {
                 $input = $request->all();
                 // dd(count($input['set1-1-1']));
@@ -150,7 +152,7 @@ class ExamController extends Controller
 
     
     public function editarticle() {  
-        if (Auth::user()->role_id===2) 
+        if (Auth::user()->role_id==2) 
         {
             $exams = Exam::get();
             return view('Exam.editarticle', compact('exams'));

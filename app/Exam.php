@@ -8,7 +8,8 @@ class Exam extends Model
 {
     protected $fillable = [
         'exam_name',                        
-        'published_at'
+        'published_at',
+        'emphasize'
     ];
 
     public function historys(){
