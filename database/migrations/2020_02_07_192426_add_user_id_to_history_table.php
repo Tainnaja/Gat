@@ -13,7 +13,7 @@ class AddUserIdToHistoryTable extends Migration
      */
     public function up()
     {
-        Schema::table('historys', function (Blueprint $table) {
+        Schema::table('histories', function (Blueprint $table) {
             $table->bigInteger('user_id')->unsigned(); 
             $table->foreign('user_id')
             ->references('id')
@@ -29,7 +29,7 @@ class AddUserIdToHistoryTable extends Migration
      */
     public function down()
     {
-        Schema::table('historys', function (Blueprint $table) {
+        Schema::table('histories', function (Blueprint $table) {
             //
         });
     }

@@ -37,8 +37,7 @@
             {!! Form::label(' article_name[]', 'ชื่อบทความ : ') !!}
              {!! Form::text('article_name[]', null, ['class'=>'form-control','Placeholder'=>"ชื่อบทความ"]) !!}
             </div>
-            <div class="form-group">            
-                
+            <div class="form-group">  
                 <textarea name="article_detail[]" class="ckeditor" ></textarea>                    
                 </textarea>
             </div>
