@@ -25,8 +25,7 @@
             </div>
             <div class="row">
                 <button class=" btn-learn"  onclick="location.href='{{ url('/fulltest') }}'">6. แบบทดสอบกับข้อสอบจริง </button>              
-            </div>
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+            </div>            
             
         </div>
         <div class="col-xs-6 col-md-1"></div> 

@@ -18,11 +18,15 @@ class FulltestController extends Controller
         $this->middleware('auth', ['only' =>
         ['index','show','sendanswer','edit','update','destroy']]);
      }
+
     public function index() {  
         try   
         {
             $fulltests = Exam::get();
-            return view('Gat.fulltest', compact('fulltests'));        
+            $histories = History::select('exam_id','total_score')->where( 'user_id', '=', Auth::user()->id)->get();            
+            //dd($histories);
+            
+            return view('Gat.fulltest', compact('fulltests','histories'));        
         } catch (Exception $e) {
             return view('Gat.index');
         }

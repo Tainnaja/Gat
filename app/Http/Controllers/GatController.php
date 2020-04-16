@@ -43,16 +43,22 @@ class GatController extends Controller
         $histories = History::where( 'user_id', '=', Auth::user()->id )->get(); 
         for($i=0; $i< count($histories); $i++){
             $exams = Exam::where( 'id', '=', $histories[$i]->exam_id )->get(); 
-            // dd($exams );  
+             
             $histories[$i]->exam_id =  $exams[0]->exam_name;
         }
-
-        $skill = Skill::where( 'user_id', '=', Auth::user()->id )->get();
-        // dd($skill);
         
-                // dd($histories);        
-        return view('Gat.yourskill', compact('histories','exams','skill'));
+        $skill = Skill::where( 'user_id', '=', Auth::user()->id )->first();
+        
+        if($histories->isEmpty()){
+            
+            return redirect()->back()->withErrors(['คุณต้องลองทำข้อสอบสักข้อก่อน ถึงจะเข้าดูประวัติการทำข้อสอบและระบบวินิจฉัยความสามารถได้', 'error_skill']);;
+        }
+        else{
+            
+            return view('Gat.yourskill', compact('histories','exams','skill'));
+        }
     }
+
     public function achievement() {  
         $histories = History::where( 'user_id', '=', Auth::user()->id )->get(); 
         $exam = 0;
@@ -63,7 +69,10 @@ class GatController extends Controller
             $exam ++;
         }
 
-        if((($exam*150)/$score) == 1){
+        if($score == 0){
+            $achievement = 6;
+        }
+        else if((($exam*150)/$score) == 1){
             $achievement = 1;
         }
         else if((($exam*150)/$score) >1 && (($exam*150)/$score) < 1.1 ){

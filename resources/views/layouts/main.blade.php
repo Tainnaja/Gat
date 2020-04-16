@@ -139,8 +139,38 @@
 
 	</footer>
 	<!-- End footer -->
+
+	<!-- Return with error -->
 	
+	@if($errors->first() == 'คุณต้องลองทำข้อสอบสักข้อก่อน ถึงจะเข้าดูประวัติการทำข้อสอบและระบบวินิจฉัยความสามารถได้')
+	<script>
+        $(function() {
+            $('#myModal2').modal('show');
+        });
+    </script>
+	@endif
 	
+
+	<!-- Modal -->
+    <div class="modal fade in" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>            
+            </div>
+				<div class="modal-body">            
+				<center><h4>{{$errors->first()}}</h4></center>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">ปิด</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
