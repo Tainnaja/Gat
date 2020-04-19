@@ -9,7 +9,8 @@
 
          <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px ">           
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'set1')">บทความที่ 1</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'set2')">บทความที่ 2</button>           
+            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'set2')">บทความที่ 2</button>
+            <button class="w3-bar-item w3-button tablink" data-toggle="modal" data-target="#guideModal">วิธีการทำข้อสอบออนไลน์</button>            
             <button class="w3-bar-item w3-button tablink" onclick="location.href='{{ url('/learn') }}'"> <span class="glyphicon  glyphicon glyphicon-arrow-left " aria-hidden="true"></span>   ย้อนกลับ</button>
         </div>  
              
@@ -257,7 +258,45 @@
         }
 </script>
 
-
+<!-- Modal Guide -->
+<div class="modal fade" id="guideModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content guide-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">คำแนะนำและวิธีการทำข้อสอบ</h4>
+        </div>
+        <div class="modal-body">
+          <h2>ขั้นตอนการทำข้อสอบ</h2><br/>
+          <p>1. เลือกบทความที่จะทำและอ่านบทความที่กำหนด ในข้อสอบ 1 ชุดจะมี 2 บทความตามรูปแบบข้อสอบ gat ทั่วไป</p>
+          <br/><br/><img src="{{ URL::asset('image/guide4.png') }}" width="280" height="220" class="center"><br/><br/>
+          <p>2. ทดสิ่งที่เรียบเรียงได้ลงโปรแกรมเขียนแผนผัง (ในแผนผังไม่มีผลต่อการคิดคะแนน ไว้เป็นเครื่องมือสำหรับทดเท่านั้น)</p>
+          <br/><br/><img src="{{ URL::asset('image/guide3.png') }}" width="600" height="320" class="center"><br/><br/>
+          <p>3. เติมคำตอบลงในช่องที่กำหนดให้ของบทความนั้น</p>
+          <br/><br/><img src="{{ URL::asset('image/guide6.png') }}" class="center"><br/><br/>
+          <p>4. เมื่อเติมคำตอบครบทั้ง 2 บทความแล้วให้กดส่งคำตอบเป็นอันเสร็จสิ้นการทำข้อสอบชุดนี้</p>
+          <br/><br/><img src="{{ URL::asset('image/guide5.png') }}" class="center"><br/><br/>
+          <h2>วิธีการเติมคำตอบที่ถูกต้อง</h2><br/>
+          <br/><img src="{{ URL::asset('image/guide1.png') }}" class="center"><br/><br/>
+          <p>1. เติมคำตอบด้วยรูปแบบคำตอบที่ถูกต้องตามทฤษฎีของ gat เชื่อมโยง โดยเริ่มเติมจากช่องซ้ายสุดก่อนเสมอ</p>
+          <p>2. การตอบไม่จำเป็นต้องเรียงเลข</p>
+          <p>3. หากข้อใดไม่มีการเชื่อมโยงเลยให้เติม 99H ไว้ที่ช่องซ้ายสุด</p>
+          <br/><h2>การเติมคำตอบที่ไม่ถูกต้อง</h2><br/>
+          <br/><img src="{{ URL::asset('image/guide2.png') }}" class="center"><br/><br/>
+          <p>1. ห้ามใส่คำตอบที่ซ้ำกันในข้อเดียวกัน มิเช่นนั้นจะทำให้ระบบตรวจคำตอบผิดพลาดได้และเป็นกฏข้อห้ามของข้อสอบ</p>
+          <p>2. ห้ามใส่คำตอบที่ผิดรูปแบบ</p>
+          <p>3. ห้ามเว้นว่างไว้ หากข้อนั้นคิดว่าไม่มีการเชื่อมโยงเลย ให้เติม 99H </p>
+          <p>4. ห้ามเว้นช่องซ้ายสุดไว้ ให้เริ่มเติมจากช่องซ้ายสุดให้เต็มก่อน </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
     <style>
         .flow-gat {
