@@ -81,23 +81,29 @@
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav mu-menu navbar-right">
-									<li><a href="{{ url('/learn') }}">HOME</a></li>									
-									<li><a href="{{ url('/achievement') }}">ACHIEVEMENT</a></li>
-									<li><a href="{{ url('/yourskill') }}">YOUR SKILL</a></li>
+																		
+									
 									<!-- <li><a href="">QUESTIONNARIE</a></li> -->
 									<!-- <li><a href="">ACCOUNT SETTING</a></li>	 -->
-									@guest			            
+									@guest
+										<li><a href="{{ url('/learn') }}">HOME</a></li>			            
 										<li><a  href="{{ url('/login') }}">LOG IN</a></li>
 										<li><a href="{{ url('/register') }}">SIGN IN</a></li>
 									@else
+										<li><img src="{{ URL::asset(Auth::user()->image) }}" alt="Avatar" style="width:50px;height:50px;border-radius: 50%"></li>
+										<li><a>{{Auth::user()->user_name}} |</a></li>		
+																			
+										<li><a href="{{ url('/learn') }}">HOME</a></li>
+										<li><a href="{{ url('/achievement') }}">ACHIEVEMENT</a></li>
+										<li><a href="{{ url('/yourskill') }}">YOUR SKILL</a></li>
 										@if(Auth::user()->role_id==2)
 											<li class="nav-item">												
 												<a class="nav-link " href="{{ url('/admin') }}"> จัดการข้อสอบ</a>
-											</li>
+											</li>											
 										@endif										
 										<li>
 											<a  class="shopping-cart" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">    logout   </a>
+                                                 document.getElementById('logout-form').submit();">LOGOUT</a>
 										</li>
 										
 										 <form  class="shopping-cart"id="logout-form" action="{{ route('logout') }}" method="POST"
