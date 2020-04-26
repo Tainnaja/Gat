@@ -459,7 +459,7 @@
                     }
                 } 
                 
-                console.log(score);
+                
                 var x = document.getElementById("answerRelation");
                 var y = document.getElementById("wrongRelation"); 
                 x.innerHTML = "คะแนนที่ได้ " + score + "/10";

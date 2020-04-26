@@ -8,7 +8,8 @@
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'set1')">บทความที่1</button>
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'set2')">บทความที่2</button>
             <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'set3')">บทความที่3</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'set4')">บทความที่4</button>            
+            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'set4')">บทความที่4</button>
+            <button class="w3-bar-item w3-button tablink" data-toggle="modal" data-target="#guideModal">วิธีการทำข้อสอบขนาดเล็ก</button>            
             <button class="w3-bar-item w3-button tablink" onclick="location.href='{{ url('/learn') }}'"> <span class="glyphicon  glyphicon glyphicon-arrow-left " aria-hidden="true"></span>   ย้อนกลับ</button>
         </div>        
         <div id="set1" class="w3-container city w3-animate-zoom" style="display:block; margin-left:250px; margin-right:150px; margin-bottom: 500px">
@@ -33,43 +34,43 @@
                 <tr  style="background:#F5F5F5">
                     <th scope="row">01</th>
                     <td>เสียเงินและเวลาโดยเปล่าประโยชน์</td>                                  
-                    <td> <input class="" id="set1-1-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set1-1-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set1-1-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>                                  
+                    <td> <input class="" id="set1-0-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set1-0-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set1-0-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>                                  
                 </tr>
                 <tr style="background:#DCDCDC">
                     <th scope="row">02</th>
                     <td>ผลการเรียนเป็นไปอย่างที่ตั้งความหวังไว้</td>
-                    <td> <input class="" id="set1-2-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set1-2-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set1-2-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
+                    <td> <input class="" id="set1-1-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set1-1-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set1-1-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
                 </tr>
                 <tr style="background:#F5F5F5">
                     <th scope="row">03</th>
                     <td >นักเรียนขาดแรงจูงใจในการเรียน</td>      
-                    <td> <input class="" id="set1-3-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set1-3-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set1-3-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
+                    <td> <input class="" id="set1-2-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set1-2-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set1-2-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
                 </tr>
                 <tr style="background:#DCDCDC">
                     <th scope="row">04</th>
                     <td>ไม่มีเป้าหมายชัดเจน</td>
-                    <td> <input class="" id="set1-4-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set1-4-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set1-4-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
+                    <td> <input class="" id="set1-3-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set1-3-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set1-3-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
                 </tr>
                 <tr style="background:#F5F5F5">
                     <th scope="row">05</th>
                     <td >ไม่ตั้งใจเรียนพิเศษ</td>      
-                    <td> <input class="" id="set1-5-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set1-5-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set1-5-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
+                    <td> <input class="" id="set1-4-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set1-4-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set1-4-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
                 </tr>
             </tbody>
             </table>
 
             <div class="row">
-                <button id="sendSet1" class=" btn-learn">ส่งคำตอบ</button>                                    
+                <center><button id="sendSet1" class=" btn-learn" onclick="CheckExamMinitest1()" data-toggle="modal" data-target="#scoreModal">ส่งคำตอบ</button></center>                                    
             </div>
                   
         </div>
@@ -95,42 +96,42 @@
             <tr  style="background:#F5F5F5">
                     <th scope="row">01</th>
                     <td>ไม่อยากเรียนหนัก</td>                                  
-                    <td> <input class="" id="set2-1-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set2-1-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set2-1-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>                                  
+                    <td> <input class="" id="set2-0-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set2-0-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set2-0-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>                                  
                 </tr>
                 <tr style="background:#DCDCDC">
                     <th scope="row">02</th>
                     <td>เลือกเรียนศิลป์คำนวณ</td>
-                    <td> <input class="" id="set2-2-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set2-2-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set2-2-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
+                    <td> <input class="" id="set2-1-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set2-1-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set2-1-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
                 </tr>
                 <tr style="background:#F5F5F5">
                     <th scope="row">03</th>
                     <td >เลือกเรียนศิลป์ภาษา</td>      
-                    <td> <input class="" id="set2-3-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set2-3-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set2-3-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
+                    <td> <input class="" id="set2-2-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set2-2-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set2-2-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
                 </tr>
                 <tr style="background:#DCDCDC">
                     <th scope="row">04</th>
                     <td>ชอบเรียนด้านภาษา</td>
-                    <td> <input class="" id="set2-4-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set2-4-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set2-4-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
+                    <td> <input class="" id="set2-3-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set2-3-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set2-3-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
                 </tr>
                 <tr style="background:#F5F5F5">
                     <th scope="row">05</th>
                     <td >การเลือกเรียนสายศิลป์</td>      
-                    <td> <input class="" id="set2-5-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set2-5-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set2-5-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
+                    <td> <input class="" id="set2-4-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set2-4-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set2-4-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
                 </tr>
             </tbody>
             </table>
             <div class="row">
-                <button id="sendSet2" class=" btn-learn">ส่งคำตอบ</button>                                    
+                <center><button id="sendSet2" class=" btn-learn" onclick="CheckExamMinitest2()" data-toggle="modal" data-target="#scoreModal">ส่งคำตอบ</button></center>                                    
             </div>
         </div> 
         <div id="set3" class="w3-container city w3-animate-zoom" style="display:block; margin-left:250px; margin-right:150px; margin-bottom: 500px">
@@ -157,56 +158,56 @@
             <tr  style="background:#F5F5F5">
                     <th scope="row">01</th>
                     <td>สิวในวัยรุ่น</td>                                  
-                    <td> <input class="" id="set3-1-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-1-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-1-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>                                  
+                    <td> <input class="" id="set3-0-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-0-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-0-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>                                  
                 </tr>
                 <tr style="background:#DCDCDC">
                     <th scope="row">02</th>
                     <td>ความกดดันในการสอบแข่งขันเข้ามหาวิทยาลัย</td>
-                    <td> <input class="" id="set3-2-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-2-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-2-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
+                    <td> <input class="" id="set3-1-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-1-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-1-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
                 </tr>
                 <tr style="background:#F5F5F5">
                     <th scope="row">03</th>
                     <td >ปัญหาสำคัญของวัยรุ่น</td>      
-                    <td> <input class="" id="set3-3-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-3-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-3-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
+                    <td> <input class="" id="set3-2-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-2-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-2-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
                 </tr>
                 <tr style="background:#DCDCDC">
                     <th scope="row">04</th>
                     <td>นอนดึก</td>
-                    <td> <input class="" id="set3-4-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-4-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-4-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
+                    <td> <input class="" id="set3-3-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-3-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-3-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
                 </tr>
                 <tr style="background:#F5F5F5">
                     <th scope="row">05</th>
                     <td >ฮอร์โมนเพศชาย</td>      
-                    <td> <input class="" id="set3-5-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-5-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-5-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
+                    <td> <input class="" id="set3-4-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-4-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-4-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
                 </tr>
                 <tr style="background:#DCDCDC">
                     <th scope="row">06</th>
                     <td>ความเครียด</td>
-                    <td> <input class="" id="set3-6-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-6-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-6-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
+                    <td> <input class="" id="set3-5-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-5-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-5-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
                 </tr>
                 <tr style="background:#F5F5F5">
                     <th scope="row">07</th>
                     <td >พบแพทย์ผิวหนังตามคลินิกเสริมความงาม</td>      
-                    <td> <input class="" id="set3-7-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-7-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set3-7-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
+                    <td> <input class="" id="set3-6-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-6-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set3-6-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
                 </tr>
             </tbody>
             </table> 
             <div class="row">
-                <button id="sendSet3" class=" btn-learn">ส่งคำตอบ</button>                                    
+                <center><button id="sendSet3" class=" btn-learn" onclick="CheckExamMinitest3()" data-toggle="modal" data-target="#scoreModal">ส่งคำตอบ</button></center>                                    
             </div>
         </div> 
         <div id="set4" class="w3-container city w3-animate-zoom" style="display:block; margin-left:250px; margin-right:150px; margin-bottom: 500px">
@@ -234,63 +235,275 @@
             <tr  style="background:#F5F5F5">
                     <th scope="row">01</th>
                     <td>ลักษณะของเนื้องานเอทีซี</td>                                  
-                    <td> <input class="" id="set4-1-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-1-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-1-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>                                  
+                    <td> <input class="" id="set4-0-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-0-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-0-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>                                  
                 </tr>
                 <tr style="background:#DCDCDC">
                     <th scope="row">02</th>
                     <td>ลักษณะของผู้ที่จะมาทำงานเอทีซี</td>
-                    <td> <input class="" id="set4-2-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-2-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-2-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
+                    <td> <input class="" id="set4-1-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-1-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-1-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
                 </tr>
                 <tr style="background:#F5F5F5">
                     <th scope="row">03</th>
                     <td >สิ่งที่ผู้สนใจควรทราบเกี่ยวกับงานเอทีซี </td>      
-                    <td> <input class="" id="set4-3-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-3-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-3-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
+                    <td> <input class="" id="set4-2-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-2-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-2-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
                 </tr>
                 <tr style="background:#DCDCDC">
                     <th scope="row">04</th>
                     <td>งานเอทีซีเป็นงานที่เครียดมากที่สุดติดอันดับโลก </td>
-                    <td> <input class="" id="set4-4-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-4-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-4-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
+                    <td> <input class="" id="set4-3-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-3-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-3-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
                 </tr>
                 <tr style="background:#F5F5F5">
                     <th scope="row">05</th>
                     <td >เป็นการจัดการระบบการบินบนน่านฟ้าทั่วโลก </td>      
-                    <td> <input class="" id="set4-5-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-5-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-5-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
+                    <td> <input class="" id="set4-4-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-4-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-4-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
                 </tr>
                 <tr style="background:#DCDCDC">
                     <th scope="row">06</th>
                     <td>เป็นการควบคุมดูแลความปลอดภัยของอากาศยาน </td>
-                    <td> <input class="" id="set4-6-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-6-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-6-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
+                    <td> <input class="" id="set4-5-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-5-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-5-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>           
                 </tr>
                 <tr style="background:#F5F5F5">
                     <th scope="row">07</th>
                     <td >ชอบทำงานเป็นทีม</td>      
-                    <td> <input class="" id="set4-7-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-7-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
-                    <td> <input class="" id="set4-7-3" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
+                    <td> <input class="" id="set4-6-0" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-6-1" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <td> <input class="" id="set4-6-2" type="text" onkeyup="this.value = this.value.toUpperCase();"></td>      
                 </tr>
             </tbody>
             </table>
             <div class="row">
-                <button id="sendSet4" class=" btn-learn">ส่งคำตอบ</button>                                    
+                <center><button id="sendSet4" class=" btn-learn" onclick="CheckExamMinitest4()" data-toggle="modal" data-target="#scoreModal">ส่งคำตอบ</button></center>                                    
             </div>
         </div> 
     
     </div>
 
 @endsection
-	<!-- End main content -->	
+	<!-- End main content -->
+
+    <script>
+        function CheckExamMinitest1(){
+            var solution1 =[['99H','',''],
+                            ['99H','',''],
+                            ['05A','',''],
+                            ['05A','',''],
+                            ['01A','02F','']];
+            var score = 0;
+            var check;
+            var Ans;
+
+            for(i=0;i<=4;i++){
+                for(j=0;j<=2;j++){
+                    check = 0;
+                    Ans = document.getElementById("set1-"+i+"-"+j).value;
+                    if(Ans != ''){
+                        for(k=0;k<=2;k++){
+                            if(solution1[i][k] == Ans){
+                                score = score + 3;
+                                check =1;
+                            }
+                        }
+                        if(check == 0)
+                            score = score - 3;
+                    }
+                }
+                
+            }                          
+            
+            if(score<0)
+                score =0;
+
+            var x = document.getElementById("answer");
+            x.innerHTML = "คะแนนที่ได้ " + score +'/18';
+                    
+            }
+
+            function CheckExamMinitest2(){
+                var solution1 =[['05A','',''],
+                                ['99H','',''],
+                                ['99H','',''],
+                                ['05A','',''],
+                                ['02D','03D','']];
+                var score = 0;
+                var check;
+                var Ans;
+
+                for(i=0;i<=4;i++){
+                    for(j=0;j<=2;j++){
+                        check = 0;
+                        Ans = document.getElementById("set2-"+i+"-"+j).value;
+                        if(Ans != ''){
+                            for(k=0;k<=2;k++){
+                                if(solution1[i][k] == Ans){
+                                    score = score + 3;
+                                    check =1;
+                                }
+                            }
+                            if(check == 0)
+                                score = score - 3;
+                        }
+                    }
+                    
+                }                          
+                
+                if(score<0)
+                    score =0;
+
+                var x = document.getElementById("answer");
+                x.innerHTML = "คะแนนที่ได้ " + score +'/18';
+                   
+        }
+
+        function CheckExamMinitest3(){
+            var solution1 =[['99H','',''],
+                            ['04A','06A',''],
+                            ['01D','',''],
+                            ['01A','',''],
+                            ['01A','',''],
+                            ['01A','',''],
+                            ['01F','','']];
+            var score = 0;
+            var check;
+            var Ans;
+
+            for(i=0;i<=6;i++){
+                for(j=0;j<=2;j++){
+                    check = 0;
+                    Ans = document.getElementById("set3-"+i+"-"+j).value;
+                    if(Ans != ''){
+                        for(k=0;k<=2;k++){
+                            if(solution1[i][k] == Ans){
+                                score = score + 3;
+                                check =1;
+                            }
+                        }
+                        if(check == 0)
+                            score = score - 3;
+                    }
+                }
+                
+            }                          
+            
+            if(score<0)
+                score =0;
+
+            var x = document.getElementById("answer");
+            x.innerHTML = "คะแนนที่ได้ " + score +'/24';
+                   
+        }
+
+        function CheckExamMinitest4(){
+            var solution1 =[['05D','06D',''],
+                            ['07D','',''],
+                            ['01D','02D',''],
+                            ['99H','',''],
+                            ['04A','',''],
+                            ['04A','',''],
+                            ['99H','','']];
+            var score = 0;
+            var check;
+            var Ans;
+
+            for(i=0;i<=6;i++){
+                for(j=0;j<=2;j++){
+                    check = 0;
+                    Ans = document.getElementById("set4-"+i+"-"+j).value;
+                    if(Ans != ''){
+                        for(k=0;k<=2;k++){
+                            if(solution1[i][k] == Ans){
+                                score = score + 3;
+                                check =1;
+                            }
+                        }
+                        if(check == 0)
+                            score = score - 3;
+                    }
+                }
+                
+            }                          
+            
+            if(score<0)
+                score =0;
+
+            var x = document.getElementById("answer");
+            x.innerHTML = "คะแนนที่ได้ " + score +'/27';
+                   
+        }
+    </script>	
+
+    <!-- Modal -->
+    <div class="modal fade in" id="scoreModal" role="dialog">
+        <div class="modal-dialog">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">ส่งคำตอบแล้ว</h4>
+            </div>
+            <div class="modal-body">
+            <center><img src="{{ URL::asset('image/write-icon.png') }}" alt="Write" style="width:100px;height:100px;" ></center>
+            <center><h2><div id="answer">คะแนนที่ได้</div></h2></center>            
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">ปิด</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <!-- Modal Guide -->
+<div class="modal fade" id="guideModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content guide-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">คำแนะนำและวิธีการทำแบบทดสอบขนาดเล็ก</h4>
+        </div>
+        <div class="modal-body">
+          <h2>ขั้นตอนการทำข้อสอบ</h2><br/>
+          <p>1. เลือกบทความที่จะทำและอ่านบทความที่กำหนด</p>
+          <br/><br/><img src="{{ URL::asset('image/guide4.png') }}" width="280" height="220" class="center"><br/><br/>
+          <p>2. ทดสิ่งที่เรียบเรียงได้ลงโปรแกรมเขียนแผนผัง (ในแผนผังไม่มีผลต่อการคิดคะแนน ไว้เป็นเครื่องมือสำหรับทดเท่านั้น)</p>
+          <br/><br/><img src="{{ URL::asset('image/guide3.png') }}" width="600" height="320" class="center"><br/><br/>
+          <p>3. เติมคำตอบลงในช่องที่กำหนดให้ของบทความนั้น</p>
+          <br/><br/><img src="{{ URL::asset('image/guide6.png') }}" class="center"><br/><br/>
+          <p>4. เมื่อคิดว่าเติมคำตอบที่ต้องการครบแล้วให้กดส่งคำตอบและดูคะแนน หากยังได้คะแนนไม่เต็มสามารถลองแก้คำตอบและส่งคำตอบใหม่ได้เลย</p>
+          <br/><br/><img src="{{ URL::asset('image/guide5.png') }}" class="center"><br/><br/>
+          <h2>วิธีการเติมคำตอบที่ถูกต้อง</h2><br/>
+          <br/><img src="{{ URL::asset('image/guide1.png') }}" class="center"><br/><br/>
+          <p>1. เติมคำตอบด้วยรูปแบบคำตอบที่ถูกต้องตามทฤษฎีของ gat เชื่อมโยง โดยเริ่มเติมจากช่องซ้ายสุดก่อนเสมอ</p>
+          <p>2. การตอบไม่จำเป็นต้องเรียงเลข</p>
+          <p>3. หากข้อใดไม่มีการเชื่อมโยงเลยให้เติม 99H ไว้ที่ช่องซ้ายสุด</p>
+          <br/><h2>การเติมคำตอบที่ไม่ถูกต้อง</h2><br/>
+          <br/><img src="{{ URL::asset('image/guide2.png') }}" class="center"><br/><br/>
+          <p>1. ห้ามใส่คำตอบที่ซ้ำกันในข้อเดียวกัน มิเช่นนั้นจะทำให้ระบบตรวจคำตอบผิดพลาดได้และเป็นกฏข้อห้ามของข้อสอบ</p>
+          <p>2. ห้ามใส่คำตอบที่ผิดรูปแบบ</p>
+          <p>3. ห้ามเว้นว่างไว้ หากข้อนั้นคิดว่าไม่มีการเชื่อมโยงเลย ให้เติม 99H </p>
+          <p>4. ห้ามเว้นช่องซ้ายสุดไว้ ให้เริ่มเติมจากช่องซ้ายสุดให้เต็มก่อน </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
     <script>
         function openLink(evt, animName) {
