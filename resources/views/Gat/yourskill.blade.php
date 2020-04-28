@@ -56,6 +56,8 @@
 									</div>
 									<!-- / Single Counter -->
 
+                                    
+
 								</div>
 							</div>
             
@@ -66,8 +68,74 @@
                                     <div class="counter-value" data-count="1055" style="margin-left:0px;">{{$skill->total_skill .'%'}}</div>
                                     <h3>อัตราความถูกต้องทั้งหมด</h3>
                                 </div>
-                            <!-- </div> -->
+
+                                <div class="mu-single-counter" style="text-align:left">                                
+                                    
+                                    <h1><b>คำแนะนำ*</b></h1>
+                                    
+                                    @if($skill->skill_A >= 95) 
+                                        <h3>คุณมีความเข้าใจความสัมพันธ์แบบ A ดีเยี่ยม</h3>
+                                    @elseif($skill->skill_A >= 75) 
+                                        <h3>คุณมีความเข้าใจความสัมพันธ์แบบ A ในเกณฑ์ดี</h3>
+                                    @else   
+                                        <h3>-คุณยังมีความเข้าใจความสัมพันธ์แบบ A ไม่ดีนัก ลองกลับไปทำข้อสอบ</h3>
+                                        <h5>
+                                        @foreach($fulltests as $fulltest)
+                                        
+                                            @if($fulltest->emphasize == 'A') 
+                                                {{$fulltest->exam_name.', '}}
+                                            @endif 
+                                        @endforeach
+                                        <h5>                                       
+                                    @endif 
+
+                                    @if($skill->skill_D >= 95) 
+                                        <h3>คุณมีความเข้าใจความสัมพันธ์แบบ D ดีเยี่ยม</h3>
+                                    @elseif($skill->skill_D >= 75) 
+                                        <h3>คุณมีความเข้าใจความสัมพันธ์แบบ D ในเกณฑ์ดี</h3>
+                                    @else   
+                                        <h3>-คุณยังมีความเข้าใจความสัมพันธ์แบบ D ไม่ดีนัก ลองกลับไปทำข้อสอบ</h3>
+                                        <h5>
+                                        @foreach($fulltests as $fulltest)
+                                        
+                                            @if($fulltest->emphasize == 'D') 
+                                                {{$fulltest->exam_name.', '}}
+                                            @endif 
+                                        @endforeach
+                                        <h5>                                       
+                                    @endif
+
+                                    @if($skill->skill_F >= 95) 
+                                        <h3>คุณมีความเข้าใจความสัมพันธ์แบบ F ดีเยี่ยม</h3>
+                                    @elseif($skill->skill_A >= 75) 
+                                        <h3>คุณมีความเข้าใจความสัมพันธ์แบบ F ในเกณฑ์ดี</h3>
+                                    @else   
+                                        <h3>-คุณยังมีความเข้าใจความสัมพันธ์แบบ F ไม่ดีนัก ลองกลับไปทำข้อสอบ</h3>
+                                        <h5>
+                                        @foreach($fulltests as $fulltest)
+                                        
+                                            @if($fulltest->emphasize == 'F') 
+                                                {{$fulltest->exam_name.', '}}
+                                            @endif 
+                                        @endforeach
+                                        <h5>                                       
+                                    @endif 
+
+                                    @if($skill->skill_99H >= 95) 
+                                        <h3>คุณมีความเข้าใจความสัมพันธ์แบบ 99H ดีเยี่ยม</h3>
+                                    @elseif($skill->skill_99H >= 75) 
+                                        <h3>คุณมีความเข้าใจความสัมพันธ์แบบ 99H ในเกณฑ์ดี</h3>
+                                    @else   
+                                        <h3>-คุณยังมีความเข้าใจความสัมพันธ์แบบ 99H ไม่ดีนัก</h3>
+                                                                           
+                                    @endif  
+                                        
+                                            
+                                </div>
+                                
                         </div>
+
+                          
                 
 
         </div>

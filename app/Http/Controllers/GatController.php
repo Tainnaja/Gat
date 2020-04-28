@@ -7,6 +7,7 @@ use App\Answerdew;
 use App\Article;
 use App\Exam;
 use App\Skill;
+use App\User;
 use App\History;
 use Auth;
 class GatController extends Controller
@@ -17,8 +18,13 @@ class GatController extends Controller
         ['fulltest','yourskill']]);
      }
 
-    public function index() {  
-        return view('Gat.index');
+    public function index() {
+        
+        $c_exam = Exam::count();
+        $c_history = History::Where('total_score','=','150')->count();
+        $c_user = User::count();
+
+        return view('Gat.index', compact('c_exam','c_history','c_user'));
     }
     public function learn() {  
         return view('Gat.learn');
@@ -48,6 +54,7 @@ class GatController extends Controller
         }
         
         $skill = Skill::where( 'user_id', '=', Auth::user()->id )->first();
+        $fulltests = Exam::get();
         
         if($histories->isEmpty()){
             
@@ -55,7 +62,7 @@ class GatController extends Controller
         }
         else{
             
-            return view('Gat.yourskill', compact('histories','exams','skill'));
+            return view('Gat.yourskill', compact('histories','skill','fulltests'));
         }
     }
 

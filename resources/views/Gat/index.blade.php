@@ -45,7 +45,7 @@
 									<div class="col-md-3 col-sm-6">
 										<div class="mu-single-counter">
 											<i class="fa fa-files-o" aria-hidden="true"></i>
-											<div class="counter-value" data-count="05">0</div>
+											<div class="counter-value" data-count="05">6</div>
 											<h5 class="mu-counter-name">Chapters</h5>
 										</div>
 									</div>
@@ -55,7 +55,7 @@
 									<div class="col-md-3 col-sm-6">
 										<div class="mu-single-counter">
 											<i class="fa fa-file-text-o" aria-hidden="true"></i>
-											<div class="counter-value" data-count="42">0</div>
+											<div class="counter-value" data-count="42">{{$c_exam}}</div>
 											<h5 class="mu-counter-name">Real Exams</h5>
 										</div>
 									</div>
@@ -65,7 +65,7 @@
 									<div class="col-md-3 col-sm-6">
 										<div class="mu-single-counter">
 											<i class="fa fa-users" aria-hidden="true"></i>
-											<div class="counter-value" data-count="1055">0</div>
+											<div class="counter-value" data-count="1055">{{$c_user}}</div>
 											<h5 class="mu-counter-name">Total Users</h5>
 										</div>
 									</div>
@@ -75,7 +75,7 @@
 									<div class="col-md-3 col-sm-6">
 										<div class="mu-single-counter">
 											<i class="fa fa-trophy" aria-hidden="true"></i>
-											<div class="counter-value" data-count="428">0</div>
+											<div class="counter-value" data-count="428">{{$c_history}}</div>
 											<h5 class="mu-counter-name">Got 150 Score</h5>
 										</div>
 									</div>
