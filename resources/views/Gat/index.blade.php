@@ -188,22 +188,12 @@
 												<i class="fa fa-flag-checkered" aria-hidden="true"></i>
 											</span>
 											<h4>Achivement</h4>
-											<p>ปลดล็อคความสำเร็จที่ท้าทายรูปแบบต่างๆ ด้วยการทำภารกิจที่กำหนดเพื่อที่คุณจะได้รู้ด้วยว่าความสำเร็จที่ไม่ง่ายเหล่านี้ คุณทำมันได้แล้ว</p>
+											<p>ปลดล็อคความสำเร็จที่ท้าทาย ด้วยการทำภารกิจที่กำหนดเพื่อที่คุณจะได้รู้ด้วยว่าความสำเร็จที่ไม่ง่ายเหล่านี้ คุณทำมันได้แล้ว</p>
 										</div>
 									</div>
 									<!-- / Book Overview Single Content -->
 
-									<!-- About Us Single Content -->
-									<div class="col-md-3 col-sm-6">
-										<div class="mu-book-overview-single">
-											<span class="mu-book-overview-icon-box">
-												<i class="fa fa-users" aria-hidden="true"></i>
-											</span>
-											<h4>Comunity</h4>
-											<p>กลุ่มชุมชนสำหรับชาวติวเข้มและผู้ที่ทำงานด้านภาษา สามารถแลกเปลี่ยนความคิดเห็นและตั้งกระทู้เกี่ยวกับเรื่องที่สงสัยได้ทุกเรื่อง</p>
-										</div>
-									</div>
-									<!-- / Book Overview Single Content -->
+									
 
 								</div>
 							</div>
@@ -219,7 +209,7 @@
 		
 
 		<!-- Start Video Review -->
-		<section id="mu-video-review">
+		<!-- <section id="mu-video-review">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -231,17 +221,17 @@
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
 							</div>
 
-							<!-- Start Video Review Content -->
+							
 							<div class="mu-video-review-content">
 								<iframe class="mu-video-iframe" width="100%" height="480" src="https://www.youtube.com/embed/T4ySAlBt2Ug" frameborder="0" allowfullscreen></iframe>
 							</div>
-							<!-- End Video Review Content -->
+							
 
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- End Video Review -->
 
 		<!-- Start Testimonials -->
@@ -258,25 +248,19 @@
 							<div class="mu-testimonials-block">
 								<ul class="mu-testimonial-slide">
 
-									<li>
-										<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."</p>
-										<img class="mu-rt-img" src="{{ URL::asset('image/reader-1.jpg') }}" alt="img">
-										<h5 class="mu-rt-name"> - Alice Boga</h5>
-										<span class="mu-rt-title">CEO, Apple Inc.</span>
+									<li>										
+										<h5 class="mu-rt-name"> Wanrat Limprapaipong</h5>
+										<span class="mu-rt-title">King Mongkut's University of Technology Thonburi student</span>
 									</li>
 
 									<li>
-										<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."</p>
-										<img class="mu-rt-img" src="{{ URL::asset('image/reader-2.jpg') }}" alt="img">
-										<h5 class="mu-rt-name"> - Jhon Doe</h5>
-										<span class="mu-rt-title">Director, Google Inc.</span>
+									<h5 class="mu-rt-name"> Thanawat pajongviriyatorn</h5>
+										<span class="mu-rt-title">King Mongkut's University of Technology Thonburi student</span>
 									</li>
 
 									<li>
-										<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."</p>
-										<img class="mu-rt-img" src="{{ URL::asset('image/reader-3.jpg') }}" alt="img">
-										<h5 class="mu-rt-name"> - Jessica Doe</h5>
-										<span class="mu-rt-title">Web Developer</span>
+									<h5 class="mu-rt-name">Pittinun</h5>
+										<span class="mu-rt-title">King Mongkut's University of Technology Thonburi student</span>
 									</li>
 
 								</ul>

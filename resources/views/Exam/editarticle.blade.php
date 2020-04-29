@@ -2,7 +2,7 @@
 
 <!-- Start Featured Slider -->
 @section('content')
-<div style="margin-top:90px ; " >
+<div style="display:block; margin-left:250px; margin-right:150px; margin-top:120px; margin-bottom: 500px" >
     <table class="table table-bordered">
                 <thead>
                     <tr style="background:black; color:#F8F8FF;">
@@ -19,7 +19,7 @@
                         <th scope="row">{{ '' .$exam->exam_name }}</th> 
                         <td> {{ '' .$exam->created_at }}</td>    
                         <td>{{ '' .$exam->updated_at }} </td>  
-                        <td> <a href="{{ url("fulltest/{$exam->id}/edit") }}">  แก้ไข </a></td>  
+                        <td> <u><a style="color:green" href="{{ url("fulltest/{$exam->id}/edit") }}">  แก้ไข </a></u></td>  
                         <td>
                             {!! Form::open(['method' => 'DELETE', 'url'=>'fulltest/'.$exam->id]) !!}                                
                             {!! Form::submit( 'ลบ' , ['class'=>'btn btn-danger']) !!}
@@ -29,5 +29,6 @@
                     @endforeach
                 </tbody>
         </table>
+        </br></br></br></br></br></br></br></br></br></br></br></br>
 
 @endsection

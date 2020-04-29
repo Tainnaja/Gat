@@ -148,7 +148,7 @@
             <!-- {!! Form::close() !!} -->
         </div>
 
-        <!-- <div id="article2" class="w3-container w3-display-container city"style="display:none" > -->
+        <br/>
         <div>
         <h1>ข้อสอบชุดที่ 2</h1>               
             <!-- {!! Form::open(['url' => '#','method' => 'POST','files' => true]) !!}                 -->

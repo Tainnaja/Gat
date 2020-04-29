@@ -6,7 +6,12 @@
 
     <div class="container" style="margin-top:140px ; ">
         <div class="row">
-        <div class="col-xs-6 col-md-3"></div>
+        <div class="col-xs-6 col-md-3">
+            <nav>                
+                <b>คำแนะนำ: ให้ศึกษาเรียงลำดับจากหัวข้อที่ 1 ลงมาเรื่อยๆ</b>
+            </nav>
+        </div>
+            
         <div class="col-xs-6 col-md-8">
             <div class="row">
                 <button class=" btn-learn"  onclick="location.href='{{ url('/skillsGat') }}'">1. อะไรคือทักษะเชิงวิเคราะห์และ Gat เชื่อมโยง </button>                                    

@@ -21,7 +21,7 @@
 										<div class="mu-single-counter">
 											<!-- <i class="fa fa-files-o" aria-hidden="true"></i> -->
 											<div class="counter-value" data-count="05">{{$skill->skill_A .'%' ?? '0'}}</div>
-											<h5 class="mu-counter-name">อัตราความถูกต้องของความสัมพันธ์แบบก่อให้เกิด</h5>
+											<h5 class="mu-counter-name">อัตราความถูกต้องของความสัมพันธ์แบบก่อให้เกิด (A)</h5>
 										</div>
 									</div>
 									<!-- / Single Counter -->
@@ -30,8 +30,8 @@
 									<div class="col-md-3 col-sm-6">
 										<div class="mu-single-counter">
 											<!-- <i class="fa fa-file-text-o" aria-hidden="true"></i> -->
-											<div class="counter-value" data-count="42">{{$skill->skill_D .'%' ?? '0'}}</div>
-											<h5 class="mu-counter-name">อัตราความถูกต้องของความสัมพันธ์แบบยับยั้ง</h5>
+											<div class="counter-value" data-count="42">{{$skill->skill_F .'%' ?? '0'}}</div>
+											<h5 class="mu-counter-name">อัตราความถูกต้องของความสัมพันธ์แบบยับยั้ง (F)</h5>
 										</div>
 									</div>
 									<!-- / Single Counter -->
@@ -40,8 +40,8 @@
 									<div class="col-md-3 col-sm-6">
 										<div class="mu-single-counter">
 											<!-- <i class="fa fa-users" aria-hidden="true"></i> -->
-											<div class="counter-value" data-count="1055">{{$skill->skill_F .'%' ?? '0'}}</div>
-											<h5 class="mu-counter-name">อัตราความถูกต้องของความสัมพันธ์แบบองค์ประกอบ</h5>
+											<div class="counter-value" data-count="1055">{{$skill->skill_D .'%' ?? '0'}}</div>
+											<h5 class="mu-counter-name">อัตราความถูกต้องของความสัมพันธ์แบบองค์ประกอบ (D)</h5>
 										</div>
 									</div>
 									<!-- / Single Counter -->

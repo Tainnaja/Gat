@@ -259,7 +259,7 @@
 
             <hr>
 
-            <h5>9. <b>การทดสอบระบบ</b>ก็อยู่ใน<b>สิ่งต้องทำ</b>วันนี้</h5><br/>            
+            <h5>9. <b>การทดสอบระบบ</b>ก็อยู่ใน<b>สิ่งที่ต้องทำ</b>วันนี้</h5><br/>            
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             <label for="q2-9">การทดสอบระบบ</label>                
                 <select id="q2-9" name="q2-9">
@@ -267,7 +267,7 @@
                     <option value="1">⎯⎯⎯⎯⎯⎯●</option>
                     <option value="2">●⎯⎯⎯⎯⎯⎯</option>                            
                 </select>
-            <label for="q2-9">สิ่งต้องทำ</label>
+            <label for="q2-9">สิ่งที่ต้องทำ</label>
 
             <hr>
 
@@ -455,7 +455,7 @@
                     score++;
                     }
                 else{
-                    wrong = wrong + String(i+1) + " ";
+                    wrong = wrong + String(i+1) + ", ";
                     }
                 } 
                 
@@ -495,7 +495,7 @@
                     score++;
                     }
                 else{
-                    wrong = wrong + String(i+1) + " ";
+                    wrong = wrong + String(i+1) + ", ";
                     }
                 } 
                 
@@ -534,19 +534,19 @@
                     }
                 else{
                     if(i == 0 || i ==1){
-                        wrong = wrong +  "1 ";
+                        wrong = wrong +  "1, ";
                     }
                     else if(i == 2 || i ==3){
-                        wrong = wrong +  "2 ";
+                        wrong = wrong +  "2, ";
                     }
                     else if(i == 4 || i ==5){
-                        wrong = wrong +  "3 ";
+                        wrong = wrong +  "3, ";
                     }
                     else if(i == 6 || i ==7){
-                        wrong = wrong +  "4 ";
+                        wrong = wrong +  "4, ";
                     }
                     else if(i == 8 || i ==9){
-                        wrong = wrong +  "5 ";
+                        wrong = wrong +  "5, ";
                     }
                 } 
                 
