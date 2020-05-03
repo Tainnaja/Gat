@@ -340,14 +340,16 @@ class FulltestController extends Controller
 
         $score1 = ((75/$ans1) * $correct1) - ($worng1 *3);
         $score2 = ((75/$ans2) * $correct2) - ($worng2 *3);
-        $sumScore = $score1 + $score2;
 
         if($score1 < 0)
-            $score1 = 0;
+        $score1 = 0;
         if($score2 < 0)
-            $score2 = 0;
-        if($sumScore < 0)
-            $sumScore = 0;
+        $score2 = 0;
+
+        $sumScore = $score1 + $score2;
+
+       
+        
         // dd(Auth::user()->id);
         $history = new History;
         $history->score_1 = $score1;
