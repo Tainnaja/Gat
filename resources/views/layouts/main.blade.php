@@ -94,7 +94,7 @@
 										<li><a>{{Auth::user()->user_name}} |</a></li>		
 																			
 										<li><a href="{{ url('/learn') }}">HOME</a></li>
-										<li><a href="{{ url('/achievement') }}">ACHIEVEMENT</a></li>
+										<li><a href="{{ url('/achievement2') }}">ACHIEVEMENT</a></li>
 										<li><a href="{{ url('/yourskill') }}">YOUR SKILL</a></li>
 										@if(Auth::user()->role_id==2)
 											<li class="nav-item">												
