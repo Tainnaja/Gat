@@ -30,6 +30,7 @@ Route::get('/minitest', 'GatController@minitest');
 Route::get('/test','TestController@index');
 Route::get('/yourskill','GatController@yourskill');
 Route::get('/achievement','GatController@achievement');
+Route::get('/achievement2','GatController@achievement2');
 
 
 

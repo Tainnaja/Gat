@@ -99,6 +99,13 @@ class GatController extends Controller
         return view('Gat.achievement', compact('achievement'));
     }
 
+    public function achievement2() {  
+        $done = History::where( 'user_id', '=', Auth::user()->id )->count();        
+        $full = History::where( 'user_id', '=', Auth::user()->id)->Where('total_score' , '=', '150')->count();
+        
+        
+        return view('Gat.achievement2', compact('done','full'));
+    }
     
 
     
